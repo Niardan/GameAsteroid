@@ -10,7 +10,7 @@ using GameEngineAsteroid.GameObjects;
 
 namespace Game.GraphicalObject
 {
-    class VisualLaserCountShots
+    internal class VisualLaserCountShots
     {
         private readonly DockPanel _dockPanel;
         private readonly Weapon _weapon;
@@ -22,7 +22,13 @@ namespace Game.GraphicalObject
             _weapon = weapon;
             _window = window;
             _weapon.LaserRecharged += _weapon_LaserRecharged;
-            CountLaserShots();
+            _weapon.Create += _weapon_ShotCreate;
+            CountShots();
+        }
+
+        private void _weapon_ShotCreate(object sender, GameObject e)
+        {
+            if(e is Laser) RemoveShot();
         }
 
         private void _weapon_LaserRecharged(object sender, EventArgs e)
@@ -30,7 +36,7 @@ namespace Game.GraphicalObject
             AddShot();
         }
 
-        public void CountLaserShots()
+        public void CountShots()
         {
             int shots = _weapon.LaserNumberShots;
             _dockPanel.Children.Clear();

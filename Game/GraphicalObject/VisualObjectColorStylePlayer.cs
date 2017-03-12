@@ -9,7 +9,7 @@ using GameEngineAsteroid.GameObjects;
 
 namespace Game.GraphicalObject
 {
-    class VisualObjectColorStylePlayer:VisualObjectColotStyle
+    class VisualObjectColorStylePlayer:VisualObjectColorStyle
     {
         private bool _PlayerMoved;
         private readonly Player _player;

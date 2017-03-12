@@ -24,9 +24,9 @@ namespace GameEngineAsteroid
 
         public float WightField { get; set; }
 
-        public event EventHandler<GameObject> Create;
-        public event EventHandler<GameObject> Destroy;
-        public event EventHandler<GameObject> Moved;
+        public event EventHandler<GameObject> ObjectCreate;
+        public event EventHandler<GameObject> ObjectDestroy;
+        public event EventHandler<GameObject> ObjectMoved;
        
 
         public GameField(float heightField, float wightField, int timeRespawnEnemy)
@@ -45,7 +45,7 @@ namespace GameEngineAsteroid
         {
             _gameObjects.Add(e);
             e.Destroyed += GameObjectDestroyed;
-            Create?.Invoke(this,e);
+            ObjectCreate?.Invoke(this,e);
             e.Moved += GameObject_Moved; ;
         }
 
@@ -68,12 +68,12 @@ namespace GameEngineAsteroid
                 e.CenterPolygonAbsolute = new GamePoint(e.CenterPolygonAbsolute.X, 0 - e.MaxRadiusObject);
             }
 
-            Moved?.Invoke(this,e);
+            ObjectMoved?.Invoke(this,e);
         }
 
         private void GameObjectDestroyed(object sender, GameObject e)
         {
-            Destroy?.Invoke(this, e);
+            ObjectDestroy?.Invoke(this, e);
             _gameObjects.Remove(e);
             e.Moved -= GameObject_Moved;
             e.Destroyed -= GameObjectDestroyed;

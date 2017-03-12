@@ -18,17 +18,17 @@ namespace Game
     {
         private GameField _gameField;
         private Player _player;
-        private DispatcherTimer timer;
+        private DispatcherTimer _timer;
         private List<Visualization> visualGameObjects;
         private bool _menu;
         private bool _blackStyle = true;
         private int _score = 0;
-        private VisualLaserCountShots _laserCount;
+        private VisualLaserCountShots _laserCountShots;
         public MainWindow()
         {
             InitializeComponent();
-            timer = new DispatcherTimer { Interval = TimeSpan.FromMilliseconds(20) };
-            timer.Tick += Timer_Tick;
+            _timer = new DispatcherTimer { Interval = TimeSpan.FromMilliseconds(20) };
+            _timer.Tick += Timer_Tick;
 
 
         }
@@ -38,8 +38,8 @@ namespace Game
            //Инициализирцем игру и подписываемся на игровые события
              InitializeGame init = new InitializeGame();
             _gameField = init.InitializeGameField(this.Height, this.Width);
-            _gameField.Create += _gameField_Create;
-            _gameField.Destroy += _gameField_Destroy;
+            _gameField.ObjectCreate += GameFieldObjectCreate;
+            _gameField.ObjectDestroy += GameFieldObjectDestroy;
 
             //получаем игрока
             _player = _gameField.Player;
@@ -48,7 +48,7 @@ namespace Game
             GameFieldCanvas.Children.Clear();
             visualGameObjects = new List<Visualization>();
             visualGameObjects.Add(new Visualization(_player, GameFieldCanvas, _blackStyle));
-            _laserCount = new VisualLaserCountShots(LaserPanel, _player.Weapon, this);
+            _laserCountShots = new VisualLaserCountShots(LaserPanel, _player.Weapon, this);
 
             //очки
             _score = 0;
@@ -65,9 +65,9 @@ namespace Game
             _menu = false;
 
             //запускаем таймер обновлений
-            timer.Start();
+            _timer.Start();
         }
-        private void _gameField_Destroy(object sender, GameObject e)
+        private void GameFieldObjectDestroy(object sender, GameObject e)
         {
             if (e is Asteroid)
                 _score += 200;
@@ -85,7 +85,7 @@ namespace Game
             visualGameObjects.Remove(obj);
         }
 
-        private void _gameField_Create(object sender, GameObject e)
+        private void GameFieldObjectCreate(object sender, GameObject e)
         {
             visualGameObjects.Add(new Visualization(e, GameFieldCanvas, _blackStyle));
         }
@@ -115,7 +115,6 @@ namespace Game
                     break;
                 case Key.C:
                     _player.ShotLaser();
-                    _laserCount.RemoveShot();
                     break;
                 case Key.Escape:
                     Pause();
@@ -145,7 +144,7 @@ namespace Game
         {
             if (!_menu)
             {
-                timer.Stop();
+                _timer.Stop();
                 _menu = true;
                 GameMenu.Visibility = Visibility.Visible;
             }
@@ -153,7 +152,7 @@ namespace Game
             {
                 GameMenu.Visibility = Visibility.Collapsed;
                 _menu = false;
-                timer.Start();
+                _timer.Start();
             }
         }
 
@@ -173,7 +172,7 @@ namespace Game
             Environment.Exit(0);
         }
 
-        private void ButtonBase_OnClick(object sender, RoutedEventArgs e)
+        private void ButtonChangeGraphic_OnClick(object sender, RoutedEventArgs e)
         {
             _blackStyle = !_blackStyle;
             ChangeGraphic(_blackStyle);
@@ -191,7 +190,7 @@ namespace Game
                 {
                     n.LoadStyle(blackStyle);
                 }
-                _laserCount.CountLaserShots();
+                _laserCountShots.CountShots();
                 Update();
             }
         }

@@ -20,9 +20,7 @@ namespace Game.GraphicalObject
 
         protected GameObject _gameObject;
         protected Canvas _canvas;
-        
-       
-        public GameObject GameObject => _gameObject;
+   
         public VisualObject(GameObject gameObject, Canvas canvas)
         {
             _canvas = canvas;
@@ -34,12 +32,12 @@ namespace Game.GraphicalObject
 
         public abstract void Remove();
         
-        protected PointCollection ConvertGamePoint(GamePoint [] gameGamePoints)
+        protected PointCollection ConvertGamePoint(GamePoint [] gamePoints)
         {
             PointCollection points =new PointCollection();
-            for (int i = 0; i < gameGamePoints.Length; i++)
+            for (int i = 0; i < gamePoints.Length; i++)
             {
-                points.Add(new Point(gameGamePoints[i].X, gameGamePoints[i].Y)); 
+                points.Add(new Point(gamePoints[i].X, gamePoints[i].Y)); 
             }
             return points;
         }

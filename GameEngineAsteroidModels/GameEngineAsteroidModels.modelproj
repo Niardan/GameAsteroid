@@ -25,6 +25,12 @@
     <Content Include="ModelDefinition\Package_0846.uml">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="ModelDefinition\Package_1101.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_1142.uml">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="ModelDefinition\Package_2033.uml">
       <SubType>Content</SubType>
     </Content>
@@ -61,6 +67,13 @@
     <Content Include="Движение игрока.sequencediagram.layout">
       <SubType>Content</SubType>
       <DependentUpon>Движение игрока.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="Движение объектов.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Движение объектов.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Движение объектов.sequencediagram</DependentUpon>
     </Content>
     <Folder Include="ModelDefinition\" />
     <Content Include="ModelDefinition\GameEngineAsteroidModels.uml">

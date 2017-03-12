@@ -11,15 +11,15 @@ namespace Game
 {
     class InitializeGame
     {
-        private GameField _gameField;
 
         public GameField InitializeGameField(double heightField, double wightField)
         {
+            GameField _gameField;
             //создаем игровое поле 
             _gameField = new GameField((float)heightField, (float)wightField, 100);
 
             //создаем и конфигурируем построителя противников
-            _gameField.InitializeEnemyBuilder(5,10,7);
+            _gameField.InitializeEnemyBuilder(5, 10, 7);
             _gameField.AddPolygonAsteroid(GetAsteroidPolygonType1());
             _gameField.AddPolygonAsteroid(GetAsteroidPolygonType2());
             _gameField.AddPolygonFragmentAsteroid(GetFragmentAsteroidPolygonType1());
@@ -27,8 +27,8 @@ namespace Game
             _gameField.AddPolygonFlyingSaucer(GetFlyingSaucerPolygon());
 
             //создаем и конфигурируем игрока
-            _gameField.InitializeWeapon(GetLaserPolygon(), 30, 5, 200, GetBulletPolygon(), 18,35);
-            _gameField.InitializePlayer(GetPlayerPolygon(),GetPlayerPolygonMoved(),180,new GamePoint(wightField/2,heightField/2),_gameField.Weapon);
+            _gameField.InitializeWeapon(GetLaserPolygon(), 30, 5, 200, GetBulletPolygon(), 18, 35);
+            _gameField.InitializePlayer(GetPlayerPolygon(), GetPlayerPolygonMoved(), 180, new GamePoint(wightField / 2, heightField / 2), _gameField.Weapon);
             _gameField.Player.AngleRotateStep = 12;
             _gameField.Player.Speed = 2;
             _gameField.Player.TimeInertion = 15;
@@ -60,7 +60,7 @@ namespace Game
                 new GamePoint(103,68), new GamePoint(108,68), new GamePoint(132,5), new GamePoint(138,2), new GamePoint(145,7),
                 new GamePoint(168,69), new GamePoint(175,68), new GamePoint(165,42), new GamePoint(172,29), new GamePoint(211,100),
                 new GamePoint(203,127), new GamePoint(195,128), new GamePoint(169,152), new GamePoint(171,161), new GamePoint(161,175),
-                new GamePoint(155,159), 
+                new GamePoint(155,159),
              };
             var polygon = GamePolygon.GetPolygon(points, 180, new GamePoint(0, 0));
             polygon.Scale = 0.4F;
@@ -132,12 +132,12 @@ namespace Game
             var polygon = GamePolygon.GetPolygon(points, 0, new GamePoint(0, 0));
             polygon.Scale = 0.2F;
             return polygon.GetDrawPoints();
-            
+
         }
 
         private GamePoint[] GetBulletPolygon()
         {
-            var  points = new GamePoint[]
+            var points = new GamePoint[]
             {
                 new GamePoint(8,48), new GamePoint(0,8), new GamePoint(4,0), new GamePoint(11,0), new GamePoint(15,6),
             };

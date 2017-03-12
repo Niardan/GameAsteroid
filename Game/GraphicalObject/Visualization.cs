@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 using System.Windows.Controls;
+using GameEngineAsteroid;
 using GameEngineAsteroid.GameObjects;
 
 namespace Game.GraphicalObject
@@ -13,8 +15,7 @@ namespace Game.GraphicalObject
         private GameObject _gameObject;
         private Canvas _canvas;
         private VisualObject _visualObject;
-        
-        // public VisualObject VisualObject => _visualObject;
+
 
 
         public GameObject GameObject => _gameObject;
@@ -24,8 +25,8 @@ namespace Game.GraphicalObject
             _canvas = canvas;
             _gameObject = gameObject;          
                 LoadStyle(blackStyle);
-            
         }
+      
 
         public void LoadStyle(bool blackStyle)
         {
@@ -43,7 +44,7 @@ namespace Game.GraphicalObject
                 }
                 else
                 {
-                    _visualObject = new VisualObjectColotStyle(_gameObject, _canvas);
+                    _visualObject = new VisualObjectColorStyle(_gameObject, _canvas);
                 }
             }
              

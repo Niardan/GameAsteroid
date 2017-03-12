@@ -11,13 +11,13 @@ using GameEngineAsteroid.GamePrimitives;
 
 namespace Game.GraphicalObject
 {
-    class VisualObjectColotStyle:VisualObject
+    class VisualObjectColorStyle:VisualObject
     {
         protected Image _image = new Image();
         private GamePoint[] _points;
         private double centerX;
         private double centerY;
-        public VisualObjectColotStyle(GameObject gameObject, Canvas canvas) : base(gameObject, canvas)
+        public VisualObjectColorStyle(GameObject gameObject, Canvas canvas) : base(gameObject, canvas)
         {
             var bitmap = new BitmapImage(new Uri("pack://application:,,,/Resources/" + GetSpriteName()));
            _points = _gameObject.OriginalPoints;
@@ -34,8 +34,8 @@ namespace Game.GraphicalObject
         {
             var transform = new RotateTransform(_gameObject.AngleRotate, centerX , centerY);
             _image.RenderTransform = transform;
-           Canvas.SetLeft(_image, ImagePosition().X);
-           Canvas.SetTop(_image, ImagePosition().Y);
+           Canvas.SetLeft(_image, ImagePosition.X);
+           Canvas.SetTop(_image, ImagePosition.Y);
         }
 
         public override void Remove()
@@ -43,11 +43,14 @@ namespace Game.GraphicalObject
             _canvas.Children.Remove(_image);
         }
 
-        private GamePoint ImagePosition()
+        private GamePoint ImagePosition
         {
-            var X = _points.Select(n => n.X).Min() +_gameObject.CenterPolygonAbsolute.X;
-            var Y = _points.Select(n => n.Y).Min() + _gameObject.CenterPolygonAbsolute.Y;
-            return new GamePoint(X,Y);
+            get
+            {
+                var X = _points.Select(n => n.X).Min() + _gameObject.CenterPolygonAbsolute.X;
+                var Y = _points.Select(n => n.Y).Min() + _gameObject.CenterPolygonAbsolute.Y;
+                return new GamePoint(X, Y);
+            }
         }
 
         private string GetSpriteName()

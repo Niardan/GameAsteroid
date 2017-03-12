@@ -54,7 +54,7 @@
                     <TextBlock Style="{DynamicResource  GreenText}">ВЫХОД</TextBlock>
                 </DockPanel>
             </Button>
-            <Button Click="ButtonBase_OnClick" Style="{DynamicResource  SecondaryButton}">
+            <Button Click="ButtonChangeGraphic_OnClick" Style="{DynamicResource  SecondaryButton}">
                 <TextBlock  Style="{DynamicResource  MainText}">СМЕНА ГРАФИКИ</TextBlock>
             </Button>
         </StackPanel>
