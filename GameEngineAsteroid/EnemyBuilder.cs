@@ -5,6 +5,7 @@ using GameEngineAsteroid.GamePrimitives;
 
 namespace GameEngineAsteroid
 {
+    //Класс построитель противников.
     internal class EnemyBuilder
     {
         public readonly Dictionary<int, GamePoint[]> TypeAsteroids;

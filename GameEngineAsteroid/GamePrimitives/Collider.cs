@@ -1,20 +1,20 @@
 ﻿namespace GameEngineAsteroid.GamePrimitives
 {
    // Класс коллайдер отвечает за физический объем объекта, и проверку на столкновения.
-    public class Collider
+    internal class Collider
     {
-        public readonly GamePolygon GamePolygon;
+        internal readonly GamePolygon GamePolygon;
 
-        public Collider(GamePolygon gamePolygon)
+        internal Collider(GamePolygon gamePolygon)
         {
             GamePolygon = gamePolygon;
         }
 
-        public bool IsCollusion(Collider collusionObject)
+        internal bool IsCollusion(Collider collusionObject)
         {
             return IsCollusion(collusionObject.GamePolygon);
         }
-        public bool IsCollusion(GamePolygon collusionObject)
+        internal bool IsCollusion(GamePolygon collusionObject)
         {
             if (GamePolygon.CenterPolygonAbsolute.DistanceTo(collusionObject.CenterPolygonAbsolute) >
                 GamePolygon.MaxRadiusObject + collusionObject.MaxRadiusObject)
@@ -45,7 +45,7 @@
             return false;
         }
 
-        internal bool IsCollusionLine(GamePoint a1, GamePoint a2, GamePoint b1, GamePoint b2)
+        private bool IsCollusionLine(GamePoint a1, GamePoint a2, GamePoint b1, GamePoint b2)
         {
             var v1 = (b2.X - b1.X) * (a1.Y - b1.Y) - (b2.Y - b1.Y) * (a1.X - b1.X);
             var v2 = (b2.X - b1.X) * (a2.Y - b1.Y) - (b2.Y - b1.Y) * (a2.X - b1.X);

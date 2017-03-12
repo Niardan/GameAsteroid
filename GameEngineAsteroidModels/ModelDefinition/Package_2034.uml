@@ -615,6 +615,7 @@
           <operation
             Id="58ddcb1f-2e0a-43e2-b671-f6defcaa6d4a"
             name="Move"
+            visibility="Protected"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -1620,6 +1621,7 @@
           <operation
             Id="6bcb311f-cd4d-47b4-8e2a-0616e936fe1e"
             name="Move"
+            visibility="Private"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -1628,6 +1630,7 @@
           <operation
             Id="8592b1b7-a0ca-4fa9-aa5f-5dc94ef73260"
             name="IsCollusion"
+            visibility="Package"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -1814,6 +1817,7 @@
           <operation
             Id="5ef0329e-b85e-454f-822e-dc46c0359150"
             name="Move"
+            visibility="Protected"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -1853,6 +1857,7 @@
           <operation
             Id="9812758e-301c-4e51-b052-76750a86f975"
             name="Move"
+            visibility="Private"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -1861,6 +1866,7 @@
           <operation
             Id="1fbf3f79-b9f6-4983-8adb-2ab6177393fd"
             name="Destroy"
+            visibility="Package"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"

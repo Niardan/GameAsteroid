@@ -3,6 +3,7 @@ using GameEngineAsteroid.GamePrimitives;
 
 namespace GameEngineAsteroid.GameObjects
 {
+    //Класс реализующий функциональность "Летающей тарелки"
    public sealed class FlyingSaucer:Enemy
     {
         private Player _player;

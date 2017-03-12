@@ -33,11 +33,11 @@ namespace Game
 
         }
 
-        public void LoadGame()
+        private void LoadGame()
         {
            //Инициализирцем игру и подписываемся на игровые события
              InitializeGame init = new InitializeGame();
-            _gameField = init.InitializeGameField(this.Height, this.Width);
+            _gameField = init.InitializeGameField(this.ActualHeight, this.ActualWidth);
             _gameField.ObjectCreate += GameFieldObjectCreate;
             _gameField.ObjectDestroy += GameFieldObjectDestroy;
 
@@ -113,7 +113,7 @@ namespace Game
                 case Key.Space:
                     _player.ShotBullet();
                     break;
-                case Key.C:
+                case Key.LeftCtrl:
                     _player.ShotLaser();
                     break;
                 case Key.Escape:

@@ -6,6 +6,7 @@ using GameEngineAsteroid.GamePrimitives;
 
 namespace GameEngineAsteroid
 {
+    //Игровое поле, сосредоточена вся логика игры.
     public class GameField
     {
         private List<GameObject> _gameObjects;

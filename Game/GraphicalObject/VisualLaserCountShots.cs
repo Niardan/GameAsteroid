@@ -58,7 +58,7 @@ namespace Game.GraphicalObject
                 _dockPanel.Children.RemoveAt(0);
         }
 
-        public TextBlock GetBlock()
+        private TextBlock GetBlock()
         {
             var block = new TextBlock {Style = (Style) _window.FindResource("Laser")};
             return block;

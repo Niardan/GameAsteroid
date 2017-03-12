@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner"
   dslVersion="1.0.0.0"
   Id="36120fd2-53c0-419c-a497-e037ec63bb4b"
   name="GamePrimitives" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -8,6 +8,7 @@
       <class
         Id="576e58f8-b792-40f4-95b0-f654a7983fd2"
         name="Collider"
+        visibility="Package"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -108,6 +109,7 @@
           <property
             Id="fed99b07-a3b0-4618-99e5-f7b5e2faab67"
             name="GamePolygon"
+            visibility="Package"
             isLeaf="false"
             isStatic="false"
             isReadOnly="true"
@@ -128,6 +130,7 @@
           <operation
             Id="a42dcdd4-6f8c-4607-95c5-9c4913a2bf77"
             name="IsCollusion"
+            visibility="Package"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -165,6 +168,7 @@
           <operation
             Id="3db22df5-e91c-47b8-9ff8-b9b3527687ee"
             name="IsCollusion"
+            visibility="Package"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -203,6 +207,7 @@
           <operation
             Id="69cbb134-ef19-4f16-9b53-fe4149d7633d"
             name="IsCollusionAccurate"
+            visibility="Private"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -241,6 +246,7 @@
           <operation
             Id="0db414d0-7b67-4738-bd0b-20a466094974"
             name="IsCollusionLine"
+            visibility="Private"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -334,6 +340,42 @@
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="8bb1795d-54f9-4b3b-a070-d131097a0de5"
+            name="struct"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="bb958bf8-3206-4cb9-b129-64b1bee0c249">
+                <propertyInstance
+                  Id="91d3e1f9-5e42-4d16-9daf-9c5452a10546"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="0aa9c347-146c-426f-9df5-d4dc985edf4e">
+                <propertyInstance
+                  Id="8242ce37-e142-4e72-86bc-177db84b62a6"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="349fb8a1-f467-4253-8a58-114d31019ac2">
+                <propertyInstance
+                  Id="5dc2a730-12ba-47be-ba13-fd9800427a79"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="5a5b1d46-e780-4ddd-a7ed-2d7ba72e0b8e">
+                <propertyInstance
+                  Id="04f08498-fe3f-4e4b-9d2e-af6159ebc7f5"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
         <ownedAttributesInternal>
           <property
             Id="b95b406e-93b0-4ca0-8b08-c1cd711f5e67"
@@ -477,6 +519,7 @@
           <property
             Id="393b4848-bcd0-4671-b25c-de272d2cd4dc"
             name="AngleRotate"
+            visibility="Package"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -627,6 +670,7 @@
           <property
             Id="35edad46-e7d0-4387-9cd1-64a3aca7efdf"
             name="Points"
+            visibility="Package"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -657,6 +701,7 @@
           <property
             Id="cc5dfe3f-b6b4-47f9-bdb4-bcce960223ec"
             name="MaxRadiusObject"
+            visibility="Package"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -675,6 +720,7 @@
           <property
             Id="8995b6b1-1396-4586-addc-6ff95c440f4f"
             name="CenterPolygonAbsolute"
+            visibility="Package"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -693,6 +739,7 @@
           <property
             Id="4995ab24-a9ba-4ff6-a624-44c388319a84"
             name="CenterPolygonRelative"
+            visibility="Package"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -869,6 +916,7 @@
           <operation
             Id="db7ef231-8998-44fd-9dcb-0cb4c3fcccdd"
             name="RotatePolygon"
+            visibility="Package"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -930,6 +978,7 @@
           <operation
             Id="fe6be6e4-6502-4044-bc76-b0ed6dadaa61"
             name="SetMove"
+            visibility="Package"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -980,6 +1029,7 @@
           <operation
             Id="7f5a464e-a1b1-4a42-8492-84c802f54837"
             name="RotatePolygon2"
+            visibility="Package"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -1003,6 +1053,7 @@
           <operation
             Id="1f1eeef2-3e93-402a-9855-1b68d3a02f92"
             name="SetMove"
+            visibility="Package"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"

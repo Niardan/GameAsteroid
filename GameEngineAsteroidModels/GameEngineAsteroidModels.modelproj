@@ -54,30 +54,31 @@
       <SubType>Content</SubType>
       <DependentUpon>UMLClassGameEngine.classdiagram</DependentUpon>
     </Content>
-    <Content Include="Выстрел.sequencediagram">
+    <Content Include="Диаграммы последовательностей\Выстрел.sequencediagram">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Выстрел.sequencediagram.layout">
+    <Content Include="Диаграммы последовательностей\Выстрел.sequencediagram.layout">
       <SubType>Content</SubType>
-      <DependentUpon>Выстрел.sequencediagram</DependentUpon>
+      <DependentUpon>Диаграммы последовательностей\Выстрел.sequencediagram</DependentUpon>
     </Content>
-    <Content Include="Движение игрока.sequencediagram">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="Движение игрока.sequencediagram.layout">
-      <SubType>Content</SubType>
-      <DependentUpon>Движение игрока.sequencediagram</DependentUpon>
-    </Content>
-    <Content Include="Движение объектов.sequencediagram">
+    <Content Include="Диаграммы последовательностей\Движение игрока.sequencediagram">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Движение объектов.sequencediagram.layout">
+    <Content Include="Диаграммы последовательностей\Движение игрока.sequencediagram.layout">
       <SubType>Content</SubType>
-      <DependentUpon>Движение объектов.sequencediagram</DependentUpon>
+      <DependentUpon>Диаграммы последовательностей\Движение игрока.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="Диаграммы последовательностей\Движение объектов.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Диаграммы последовательностей\Движение объектов.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Диаграммы последовательностей\Движение объектов.sequencediagram</DependentUpon>
     </Content>
     <Folder Include="ModelDefinition\" />
     <Content Include="ModelDefinition\GameEngineAsteroidModels.uml">
       <SubType>Content</SubType>
     </Content>
+    <Folder Include="Диаграммы последовательностей" />
   </ItemGroup>
 </Project>

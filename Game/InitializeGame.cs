@@ -130,7 +130,7 @@ namespace Game
                 new GamePoint(513,254), new GamePoint(430,323)
              };
             var polygon = GamePolygon.GetPolygon(points, 0, new GamePoint(0, 0));
-            polygon.Scale = 0.2F;
+            polygon.Scale = 0.3F;
             return polygon.GetDrawPoints();
 
         }

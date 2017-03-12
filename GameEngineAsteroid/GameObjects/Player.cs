@@ -6,6 +6,7 @@ using GameEngineAsteroid.GamePrimitives;
 
 namespace GameEngineAsteroid.GameObjects
 {
+    //Класс описывает функциональность игрока
     public class Player : GameObject
     {
         class Acceleration

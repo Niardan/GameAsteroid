@@ -4,6 +4,7 @@ using GameEngineAsteroid.GamePrimitives;
 
 namespace GameEngineAsteroid.GameObjects
 {
+    //Общий, абстрактный класс противников на игровом поле.
     public abstract class Enemy : GameObject
     {
         public readonly int TypeVisualization;

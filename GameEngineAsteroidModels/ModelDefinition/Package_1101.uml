@@ -81,6 +81,7 @@
           <operation
             Id="46eb0541-39c9-4933-817c-51a168f279b1"
             name="ConvertGamePoint"
+            visibility="Private"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -182,7 +183,7 @@
       <class
         Id="7b7f9331-5902-4234-9b53-6c71adf9720c"
         name="VisualObjectBlackStyle"
-        isAbstract="true"
+        isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
         <generalsInternal>
@@ -199,6 +200,7 @@
           <property
             Id="e290f2b4-3aed-48e6-a871-b30866064c34"
             name="_polygon"
+            visibility="Private"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -239,7 +241,7 @@
       <class
         Id="65d699dd-5de1-4a61-9107-c54c3ae13ef7"
         name="VisualObjectColorStyle"
-        isAbstract="true"
+        isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
         <generalsInternal>
@@ -256,6 +258,7 @@
           <property
             Id="759fe896-dbae-459e-9d7e-d5c19d79e55d"
             name="_image"
+            visibility="Protected"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -274,6 +277,7 @@
           <property
             Id="9b0cd2e6-d1d6-4807-8cac-55c09980192a"
             name="_points"
+            visibility="Private"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -304,6 +308,7 @@
           <property
             Id="fcc5cdb1-8622-4d59-8ad8-2f9c557b1887"
             name="centerX"
+            visibility="Private"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -322,6 +327,7 @@
           <property
             Id="282a3ac6-93f0-437d-972d-2fa6421a24c1"
             name="centerY"
+            visibility="Private"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -340,6 +346,7 @@
           <property
             Id="7f2e144b-22a8-443d-a825-95836b8df5bc"
             name="ImagePosition"
+            visibility="Private"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -376,6 +383,7 @@
           <operation
             Id="33a43875-2418-42d4-a35a-899e09147d20"
             name="GetSpriteName"
+            visibility="Private"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -398,7 +406,7 @@
       <class
         Id="e3db093d-c2e0-4f0c-9682-48d895dc9f1c"
         name="VisualObjectColorStylePlayer"
-        isAbstract="true"
+        isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
         <generalsInternal>
@@ -415,6 +423,7 @@
           <property
             Id="5285b1ff-acdc-4206-bf1c-59f4d53e8c06"
             name="_player"
+            visibility="Private"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -433,6 +442,7 @@
           <property
             Id="94cb37fc-5d67-40a9-80e3-0f9477e54e62"
             name="_spritePlayerNotMoved"
+            visibility="Private"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -463,6 +473,7 @@
           <property
             Id="902f97a2-f0ee-4705-ac90-8b6147e08c84"
             name="_PlayerMoved"
+            visibility="Private"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -481,6 +492,7 @@
           <property
             Id="66fbd88b-fb40-47c8-befc-24142e44dd26"
             name="_spritePlayerMoved"
+            visibility="Private"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -624,6 +636,7 @@
           <property
             Id="455d118a-423f-4b14-bf0d-bb72f3413b36"
             name="_gameObject"
+            visibility="Private"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -642,6 +655,7 @@
           <property
             Id="ae7fc7fa-10dc-49d6-9d94-2e2d5a79d607"
             name="_canvas"
+            visibility="Private"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -660,6 +674,7 @@
           <property
             Id="d3c491a8-55a1-4962-b178-14bbd94ef047"
             name="_visualObject"
+            visibility="Private"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -678,6 +693,7 @@
           <property
             Id="49cf9219-e9f8-4e55-b8eb-417949088cfd"
             name="_laserCountShots"
+            visibility="Private"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -695,14 +711,6 @@
           </property>
         </ownedAttributesInternal>
         <ownedOperationsInternal>
-          <operation
-            Id="9974bfc4-b522-40cf-874b-ff6767db827a"
-            name="InitializeLaserShotVizualization"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false" />
           <operation
             Id="914e45a3-3ff9-46f2-9651-9a2424a22a38"
             name="LoadStyle(blackStyle:Boolean"
@@ -746,6 +754,7 @@
           <property
             Id="02bc0940-c5ec-49d1-a038-c95ffc3d4f60"
             name="_dockPanel"
+            visibility="Private"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -764,6 +773,7 @@
           <property
             Id="404b62af-28a0-4cd8-b4aa-926e8281e5f6"
             name="_wepon"
+            visibility="Private"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -782,6 +792,7 @@
           <property
             Id="0502ae0d-7f6c-4a66-91be-f60cc2a0e6da"
             name="_window"
+            visibility="Private"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -802,6 +813,7 @@
           <operation
             Id="369e2635-c278-4ab4-89a3-b15112bd86ed"
             name="_weapon_ShotCreate"
+            visibility="Private"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -841,6 +853,7 @@
           <operation
             Id="58581363-c5e6-4b99-b209-0c2318b8244f"
             name="_weapon_LaserRecharged"
+            visibility="Private"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"

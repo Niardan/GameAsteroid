@@ -4,6 +4,7 @@ using GameEngineAsteroid.GamePrimitives;
 
 namespace GameEngineAsteroid
 {
+    //Класс "оружие", отвечает за создание "снарядов и лазеров" подчинен классу игрок.
     public class Weapon
     {
         public event EventHandler<GameObject> Create;

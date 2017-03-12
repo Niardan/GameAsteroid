@@ -3,7 +3,8 @@ using GameEngineAsteroid.GamePrimitives;
 
 namespace GameEngineAsteroid.GameObjects
 {
-    public sealed class FragmentAsteroid:Enemy
+    //Класс реализующий функциональность "Фрагмента астероида"
+    public  class FragmentAsteroid:Enemy
     {
         
         public FragmentAsteroid(GamePoint[] notMovedPolygon, float angleRotateGradus, GamePoint creationGamePoint, float speed,int typeVisualization)

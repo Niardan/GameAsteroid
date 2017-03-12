@@ -7,13 +7,16 @@ namespace GameEngineAsteroid.GamePrimitives
     {
         private float _angleRotate;
         private float _scale = 1;
-        public GamePoint[] Points { get; internal set; }
-        public float MaxRadiusObject { get; private set; }
 
-        public GamePoint CenterPolygonAbsolute { get; set; }
-        public GamePoint CenterPolygonRelative{ get; set; }
-        public readonly bool OffcetCenter;
-        public float AngleRotate
+        internal GamePoint[] Points { get;  set; }
+        internal float MaxRadiusObject { get; private set; }
+
+        internal GamePoint CenterPolygonAbsolute { get; set; }
+        internal GamePoint CenterPolygonRelative{ get; set; }
+
+        internal readonly bool OffcetCenter;
+
+        internal float AngleRotate
         {
             get { return _angleRotate; }
             set
@@ -28,12 +31,42 @@ namespace GameEngineAsteroid.GamePrimitives
             get { return _scale; }
             set
             {
+                if (value<=0) throw new ArgumentException("Масштаб должен быть положительным числом.");
                 _scale = value;
                 SetMaxRadius(CenterPolygonRelative);
             }
         }
 
-        private GamePolygon(GamePoint[] gamePoints, GamePoint centerPolygon, float angleGradus, GamePoint creationGamePoint, bool offcetCenter=false)
+
+        public static GamePolygon GetPolygon(GamePoint[] points, float angleRotationGradus, GamePoint creationGamePoint)
+        {
+            GamePoint centerPolygon = GetCenterPolygon(points);
+            return new GamePolygon(points, centerPolygon, angleRotationGradus, creationGamePoint);
+        }
+        private static GamePoint GetCenterPolygon(GamePoint[] gamePoints)
+        {
+            float minPointX = gamePoints.Min(n => n.X);
+            float maxPointX = gamePoints.Max(n => n.X);
+            float minPointY = gamePoints.Min(n => n.Y);
+            float maxPointY = gamePoints.Max(n => n.Y);
+            return new GamePoint((maxPointX - minPointX) / 2 + minPointX, (maxPointY - minPointY) / 2 + minPointY);
+        }
+
+        public static GamePolygon GetPollygonOffcetCenter(GamePoint[] gamePoints, float angleGradus, GamePoint creationGamePoint)
+        {
+            GamePoint centerPolygon = GetOffcetCenterPolygon(gamePoints);
+            return new GamePolygon(gamePoints, centerPolygon, angleGradus, creationGamePoint,true);
+        }
+        private static GamePoint GetOffcetCenterPolygon(GamePoint[] gamePoints)
+        {
+            float minPointX = gamePoints.Min(n => n.X);
+            float maxPointX = gamePoints.Max(n => n.X);
+            float minPointY = gamePoints.Min(n => n.Y);
+            return new GamePoint((maxPointX - minPointX) / 2 + minPointX, minPointY);
+        }
+
+
+        private GamePolygon(GamePoint[] gamePoints, GamePoint centerPolygon, float angleGradus, GamePoint creationGamePoint, bool offcetCenter = false)
         {
             if (gamePoints.Length < 3)
             {
@@ -52,44 +85,11 @@ namespace GameEngineAsteroid.GamePrimitives
             SetMaxRadius(CenterPolygonRelative);
         }
 
-        //Фабрика полигонов, генерирует полигон  по заданному массиву координат.
-        //Объект строится с центром в заданной точке
-        public static GamePolygon GetPolygon(GamePoint[] points, float angleRotationGradus, GamePoint creationGamePoint)
-        {
-            GamePoint centerPolygon = GetCenterPolygon(points);
-            return new GamePolygon(points, centerPolygon, angleRotationGradus, creationGamePoint);
-        }
-        //Фабрика полигонов, генерирует полигон со смещенным центром по заданному массиву координат.
-        //Объект строится с центром в заданной точке
-        public static GamePolygon GetPollygonOffcetCenter(GamePoint[] gamePoints, float angleGradus, GamePoint creationGamePoint)
-        {
-            GamePoint centerPolygon = GetOffcetCenterPolygon(gamePoints);
-            return new GamePolygon(gamePoints, centerPolygon, angleGradus, creationGamePoint,true);
-        }
-        //Нахождение центральной точки полигона,  используеся в фабрике.
-        private static GamePoint GetCenterPolygon(GamePoint[] gamePoints)
-        {
-            float minPointX = gamePoints.Min(n => n.X);
-            float maxPointX = gamePoints.Max(n => n.X);
-            float minPointY = gamePoints.Min(n => n.Y);
-            float maxPointY = gamePoints.Max(n => n.Y);
-            return new GamePoint((maxPointX - minPointX) / 2 + minPointX, (maxPointY - minPointY) / 2 + minPointY);
-        }
-        //Нахождение смещенной центральной точки полигона,  используеся в фабрике.
-        private static GamePoint GetOffcetCenterPolygon(GamePoint[] gamePoints)
-        {
-            float minPointX = gamePoints.Min(n => n.X);
-            float maxPointX = gamePoints.Max(n => n.X);
-            float minPointY = gamePoints.Min(n => n.Y);
-            return new GamePoint((maxPointX - minPointX) / 2 + minPointX, minPointY);
-        }
-
-        //Расчет расстояния до максимально удаленной точки от центра полигона
         private void SetMaxRadius(GamePoint centerPolygon)
         {
             MaxRadiusObject = (float)Points.Select(n => n * Scale).Max(n => n.DistanceTo(centerPolygon));
         }
-        //Поворот полигона вокруг центра
+        
         private GamePoint[] RotatePolygon()
         {
             GamePoint[] rotateGamePoints = new GamePoint[Points.Length];
@@ -99,10 +99,6 @@ namespace GameEngineAsteroid.GamePrimitives
             }
             return rotateGamePoints;
         }
-
-
-
-        //Поворот точки вокруг центра
         internal GamePoint RotatePoint(GamePoint point)
         {
             var angleRad = (AngleRotate * Math.PI) / 180;
@@ -113,12 +109,11 @@ namespace GameEngineAsteroid.GamePrimitives
             return new GamePoint((float)x, (float)y);
         }
         
-        //Перемещение полигона на расстояние
-        public GamePoint[] SetMove(float distance)
+        internal GamePoint[] SetMove(float distance)
         {
             return SetMove(distance, AngleRotate);
         }
-        public GamePoint[] SetMove(float distance, float angleRotate)
+        internal GamePoint[] SetMove(float distance, float angleRotate)
         {
             var angleRad = (angleRotate * Math.PI) / 180;
             CenterPolygonAbsolute = new GamePoint(-Math.Sin(angleRad) * distance + CenterPolygonAbsolute.X
@@ -126,7 +121,7 @@ namespace GameEngineAsteroid.GamePrimitives
             return GetDrawPoints();
         }
 
-        //Возвращение повернутой фигуры в абсолютных координатах
+       
         public GamePoint[] GetDrawPoints()
         {
             GamePoint[] newGamePoints = new GamePoint[Points.Length];

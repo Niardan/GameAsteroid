@@ -365,7 +365,7 @@
                       </property>
                     </ownedAttributesInternal>
                     <ownedOperationsInternal>
-                      <operation Id="7140264f-bb2b-4039-a4ff-30a39c0f368f" name="Move" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                      <operation Id="7140264f-bb2b-4039-a4ff-30a39c0f368f" name="Move" visibility="Protected" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
                         <elementDefinition Id="58ddcb1f-2e0a-43e2-b671-f6defcaa6d4a" />
                       </operation>
                     </ownedOperationsInternal>
@@ -868,10 +868,10 @@
                       </property>
                     </ownedAttributesInternal>
                     <ownedOperationsInternal>
-                      <operation Id="ec032866-ad69-4511-ae2f-559a82c8684b" name="Move" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                      <operation Id="ec032866-ad69-4511-ae2f-559a82c8684b" name="Move" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
                         <elementDefinition Id="6bcb311f-cd4d-47b4-8e2a-0616e936fe1e" />
                       </operation>
-                      <operation Id="440697c1-4e13-486c-9a39-e431ab04e60c" name="IsCollusion" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                      <operation Id="440697c1-4e13-486c-9a39-e431ab04e60c" name="IsCollusion" visibility="Package" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
                         <elementDefinition Id="8592b1b7-a0ca-4fa9-aa5f-5dc94ef73260" />
                         <ownedParameters>
                           <operationHasOwnedParameters>
@@ -934,7 +934,7 @@
                       </generalization>
                     </generalsInternal>
                     <ownedOperationsInternal>
-                      <operation Id="70138879-fd5c-4e16-a863-f8f9a4dcbdd6" name="Move" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                      <operation Id="70138879-fd5c-4e16-a863-f8f9a4dcbdd6" name="Move" visibility="Protected" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
                         <elementDefinition Id="5ef0329e-b85e-454f-822e-dc46c0359150" />
                       </operation>
                     </ownedOperationsInternal>
@@ -956,10 +956,10 @@
                       </generalization>
                     </generalsInternal>
                     <ownedOperationsInternal>
-                      <operation Id="408ba083-6eab-4658-90be-4bcbf579e722" name="Move" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                      <operation Id="408ba083-6eab-4658-90be-4bcbf579e722" name="Move" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
                         <elementDefinition Id="9812758e-301c-4e51-b052-76750a86f975" />
                       </operation>
-                      <operation Id="29f041c0-8302-4175-b2db-3426751c6815" name="Destroy" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                      <operation Id="29f041c0-8302-4175-b2db-3426751c6815" name="Destroy" visibility="Package" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
                         <elementDefinition Id="1fbf3f79-b9f6-4983-8adb-2ab6177393fd" />
                       </operation>
                       <operation Id="f5efe5fe-54c2-430b-8332-4cfbb6aca03e" name="CreateFragmentAsteroid" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
@@ -976,7 +976,7 @@
               <elementDefinition Id="36120fd2-53c0-419c-a497-e037ec63bb4b" />
               <packagedElements>
                 <packageHasNamedElement>
-                  <class Id="46ab6a25-961f-4f3d-8d6b-08a7865fd683" name="Collider" isAbstract="false" isLeaf="false" isActiveClass="false">
+                  <class Id="46ab6a25-961f-4f3d-8d6b-08a7865fd683" name="Collider" visibility="Package" isAbstract="false" isLeaf="false" isActiveClass="false">
                     <elementDefinition Id="576e58f8-b792-40f4-95b0-f654a7983fd2" />
                     <targetEnds>
                       <association Id="ff16b14d-c967-442e-b818-c163475287a2" isDerived="false" sourceEndRoleName="Collider" targetEndRoleName="GamePolygon" isLeaf="false" isAbstract="false">
@@ -1023,7 +1023,7 @@
                       </association>
                     </targetEnds>
                     <ownedAttributesInternal>
-                      <property Id="cfaf1e87-db81-4417-93a1-b2e2f92b90ef" name="GamePolygon" isLeaf="false" isStatic="false" isReadOnly="true" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                      <property Id="cfaf1e87-db81-4417-93a1-b2e2f92b90ef" name="GamePolygon" visibility="Package" isLeaf="false" isStatic="false" isReadOnly="true" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
                         <elementDefinition Id="fed99b07-a3b0-4618-99e5-f7b5e2faab67" />
                         <type_NamedElement>
                           <referencedTypeMoniker Id="9bd0ac52-cb95-4654-9419-0e9c5d72f8d2" LastKnownName="GamePolygon" />
@@ -1031,7 +1031,7 @@
                       </property>
                     </ownedAttributesInternal>
                     <ownedOperationsInternal>
-                      <operation Id="09b574b8-b9ce-4e7f-8eca-0562522c8c27" name="IsCollusion" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                      <operation Id="09b574b8-b9ce-4e7f-8eca-0562522c8c27" name="IsCollusion" visibility="Package" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
                         <elementDefinition Id="a42dcdd4-6f8c-4607-95c5-9c4913a2bf77" />
                         <ownedParameters>
                           <operationHasOwnedParameters>
@@ -1052,7 +1052,7 @@
                           </operationHasOwnedParameters>
                         </ownedParameters>
                       </operation>
-                      <operation Id="4f545dde-4864-4271-b25a-db9d2875adb7" name="IsCollusion" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                      <operation Id="4f545dde-4864-4271-b25a-db9d2875adb7" name="IsCollusion" visibility="Package" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
                         <elementDefinition Id="3db22df5-e91c-47b8-9ff8-b9b3527687ee" />
                         <ownedParameters>
                           <operationHasOwnedParameters>
@@ -1073,7 +1073,7 @@
                           </operationHasOwnedParameters>
                         </ownedParameters>
                       </operation>
-                      <operation Id="2623e22d-0c89-4e50-b794-233112a5ebe6" name="IsCollusionAccurate" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                      <operation Id="2623e22d-0c89-4e50-b794-233112a5ebe6" name="IsCollusionAccurate" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
                         <elementDefinition Id="69cbb134-ef19-4f16-9b53-fe4149d7633d" />
                         <ownedParameters>
                           <operationHasOwnedParameters>
@@ -1094,7 +1094,7 @@
                           </operationHasOwnedParameters>
                         </ownedParameters>
                       </operation>
-                      <operation Id="9f0b2bf5-4441-4560-80eb-f72880fb8d1d" name="IsCollusionLine" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                      <operation Id="9f0b2bf5-4441-4560-80eb-f72880fb8d1d" name="IsCollusionLine" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
                         <elementDefinition Id="0db414d0-7b67-4738-bd0b-20a466094974" />
                         <ownedParameters>
                           <operationHasOwnedParameters>
@@ -1149,6 +1149,37 @@
                 </packageHasNamedElement>
                 <packageHasNamedElement>
                   <class Id="6cec8552-3db0-4304-81bc-93c3f02b2cc1" name="GamePoint" isAbstract="false" isLeaf="false" isActiveClass="false">
+                    <appliedStereotypesInternal>
+                      <stereotypeInstance Id="a8d00780-0cc0-49f1-9ff0-554012d1da2f" name="struct" profile="CSharpProfile">
+                        <elementDefinition Id="8bb1795d-54f9-4b3b-a070-d131097a0de5" />
+                        <propertyInstances>
+                          <stereotypeInstanceHasPropertyInstances Id="b92f4b6a-0bd2-4ec7-833f-af93e61668f7">
+                            <propertyInstance Id="dd5b7f42-ad1e-45a4-87d2-22c4ce060cd4" name="ClrAttributes">
+                              <elementDefinition Id="91d3e1f9-5e42-4d16-9daf-9c5452a10546" />
+                            </propertyInstance>
+                            <elementDefinition Id="bb958bf8-3206-4cb9-b129-64b1bee0c249" />
+                          </stereotypeInstanceHasPropertyInstances>
+                          <stereotypeInstanceHasPropertyInstances Id="fd81face-1a85-4a76-92ff-b85ee505323c">
+                            <propertyInstance Id="83c139d9-e152-4fda-a46e-c96d37019b45" name="IsPartial" value="false">
+                              <elementDefinition Id="8242ce37-e142-4e72-86bc-177db84b62a6" />
+                            </propertyInstance>
+                            <elementDefinition Id="0aa9c347-146c-426f-9df5-d4dc985edf4e" />
+                          </stereotypeInstanceHasPropertyInstances>
+                          <stereotypeInstanceHasPropertyInstances Id="149810a0-473c-45d1-81e5-8a291cba7fd1">
+                            <propertyInstance Id="1d39b330-6017-4421-88e3-4934389b43b5" name="IsUnsafe" value="false">
+                              <elementDefinition Id="5dc2a730-12ba-47be-ba13-fd9800427a79" />
+                            </propertyInstance>
+                            <elementDefinition Id="349fb8a1-f467-4253-8a58-114d31019ac2" />
+                          </stereotypeInstanceHasPropertyInstances>
+                          <stereotypeInstanceHasPropertyInstances Id="798ea925-d726-490e-9819-1f57906963e4">
+                            <propertyInstance Id="c42c4f8e-7d13-420b-9d23-a303c6040d83" name="PackageVisibility" value="internal">
+                              <elementDefinition Id="04f08498-fe3f-4e4b-9d2e-af6159ebc7f5" />
+                            </propertyInstance>
+                            <elementDefinition Id="5a5b1d46-e780-4ddd-a7ed-2d7ba72e0b8e" />
+                          </stereotypeInstanceHasPropertyInstances>
+                        </propertyInstances>
+                      </stereotypeInstance>
+                    </appliedStereotypesInternal>
                     <elementDefinition Id="a51feacb-d613-4e83-8779-ea00f128ed3d" />
                     <ownedAttributesInternal>
                       <property Id="2d31c8cb-3605-4630-a903-b2ba896b6ad4" name="X" isLeaf="false" isStatic="false" isReadOnly="true" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
@@ -1221,7 +1252,7 @@
                       </association>
                     </targetEnds>
                     <ownedAttributesInternal>
-                      <property Id="70afea3c-cea4-40af-bd22-124c222f2e66" name="AngleRotate" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                      <property Id="70afea3c-cea4-40af-bd22-124c222f2e66" name="AngleRotate" visibility="Package" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
                         <appliedStereotypesInternal>
                           <stereotypeInstance Id="948c8fd3-a91f-4903-b4f7-f35dead63adc" name="property" profile="CSharpProfile">
                             <elementDefinition Id="a67190bd-1d8e-4829-923a-fd9863175bc0" />
@@ -1331,7 +1362,7 @@
                           <referencedTypeMoniker Id="e8f53bb9-31d0-49db-8d31-b55a7078f68c" LastKnownName="Float" />
                         </type_NamedElement>
                       </property>
-                      <property Id="c7cecc25-477b-4572-8b78-99e68e446a0e" name="Points" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                      <property Id="c7cecc25-477b-4572-8b78-99e68e446a0e" name="Points" visibility="Package" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
                         <lowerValueInternal>
                           <literalString Id="05cb2327-a1ae-4871-b40a-d8aed4389f1d" name="Lower" value="0">
                             <elementDefinition Id="e66e27d4-3a17-4f73-bd53-d2e7800fa2c2" />
@@ -1347,19 +1378,19 @@
                           <referencedTypeMoniker Id="c60aa343-8436-4487-adbf-17f7aec74e18" LastKnownName="GamePoint" />
                         </type_NamedElement>
                       </property>
-                      <property Id="e5cc8a30-1393-43fe-a1e5-56d950405c56" name="MaxRadiusObject" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                      <property Id="e5cc8a30-1393-43fe-a1e5-56d950405c56" name="MaxRadiusObject" visibility="Package" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
                         <elementDefinition Id="cc5dfe3f-b6b4-47f9-bdb4-bcce960223ec" />
                         <type_NamedElement>
                           <referencedTypeMoniker Id="e8f53bb9-31d0-49db-8d31-b55a7078f68c" LastKnownName="Float" />
                         </type_NamedElement>
                       </property>
-                      <property Id="d4557201-bf9f-448a-b425-e0b1991b19c1" name="CenterPolygonAbsolute" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                      <property Id="d4557201-bf9f-448a-b425-e0b1991b19c1" name="CenterPolygonAbsolute" visibility="Package" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
                         <elementDefinition Id="8995b6b1-1396-4586-addc-6ff95c440f4f" />
                         <type_NamedElement>
                           <referencedTypeMoniker Id="c60aa343-8436-4487-adbf-17f7aec74e18" LastKnownName="GamePoint" />
                         </type_NamedElement>
                       </property>
-                      <property Id="2c4fffb8-4a20-4ea5-b228-70abca5c07b9" name="CenterPolygonRelative" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                      <property Id="2c4fffb8-4a20-4ea5-b228-70abca5c07b9" name="CenterPolygonRelative" visibility="Package" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
                         <elementDefinition Id="4995ab24-a9ba-4ff6-a624-44c388319a84" />
                         <type_NamedElement>
                           <referencedTypeMoniker Id="c60aa343-8436-4487-adbf-17f7aec74e18" LastKnownName="GamePoint" />
@@ -1461,7 +1492,7 @@
                           </operationHasOwnedParameters>
                         </ownedParameters>
                       </operation>
-                      <operation Id="d0034413-0cee-407b-95aa-e4ecb83f5d6d" name="RotatePolygon" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                      <operation Id="d0034413-0cee-407b-95aa-e4ecb83f5d6d" name="RotatePolygon" visibility="Package" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
                         <elementDefinition Id="db7ef231-8998-44fd-9dcb-0cb4c3fcccdd" />
                         <ownedParameters>
                           <operationHasOwnedParameters>
@@ -1495,7 +1526,7 @@
                           </operationHasOwnedParameters>
                         </ownedParameters>
                       </operation>
-                      <operation Id="69df1f7d-9a36-43ad-a2a0-58cba2f60947" name="SetMove" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                      <operation Id="69df1f7d-9a36-43ad-a2a0-58cba2f60947" name="SetMove" visibility="Package" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
                         <elementDefinition Id="fe6be6e4-6502-4044-bc76-b0ed6dadaa61" />
                         <ownedParameters>
                           <operationHasOwnedParameters>
@@ -1526,7 +1557,7 @@
                           </operationHasOwnedParameters>
                         </ownedParameters>
                       </operation>
-                      <operation Id="b0b56deb-28f3-4379-8b44-2d0998c2473f" name="RotatePolygon2" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                      <operation Id="b0b56deb-28f3-4379-8b44-2d0998c2473f" name="RotatePolygon2" visibility="Package" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
                         <elementDefinition Id="7f5a464e-a1b1-4a42-8492-84c802f54837" />
                         <ownedParameters>
                           <operationHasOwnedParameters>
@@ -1539,7 +1570,7 @@
                           </operationHasOwnedParameters>
                         </ownedParameters>
                       </operation>
-                      <operation Id="229f3f80-4319-4630-a8c9-4f19f2bd2f3e" name="SetMove" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                      <operation Id="229f3f80-4319-4630-a8c9-4f19f2bd2f3e" name="SetMove" visibility="Package" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
                         <elementDefinition Id="1f1eeef2-3e93-402a-9855-1b68d3a02f92" />
                         <ownedParameters>
                           <operationHasOwnedParameters>

@@ -4,6 +4,7 @@ using GameEngineAsteroid.GamePrimitives;
 
 namespace GameEngineAsteroid.GameObjects
 {
+    //Класс обеспечивающий работу "Астероида"
     public  class Asteroid:Enemy
     {
         private readonly EnemyBuilder _builder;
@@ -15,17 +16,17 @@ namespace GameEngineAsteroid.GameObjects
             Speed = speed;
         }
 
-        internal override void Destroy()
-        {
-            CreateFragmentAsteroid();
-            base.Destroy();
-        }
-
         protected override void Move()
         {
             SetMove(Speed);
             base.Move();
         }
+        internal override void Destroy()
+        {
+            CreateFragmentAsteroid();
+            base.Destroy();
+        }
+       
 
         private void CreateFragmentAsteroid()
         {

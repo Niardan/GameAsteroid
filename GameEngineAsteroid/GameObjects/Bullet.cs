@@ -3,12 +3,14 @@ using GameEngineAsteroid.GamePrimitives;
 
 namespace GameEngineAsteroid.GameObjects
 {
+
+    //Класс "снаряда", выпускаемые игроком "пули".
     public sealed class Bullet : GameObject
     {
 
         private int LifeTime { get; set; }
 
-        public Bullet(GamePoint[] notMovedPolygon, float angleRotateGradus, GamePoint creationGamePoint, int lifeTime)
+        internal Bullet(GamePoint[] notMovedPolygon, float angleRotateGradus, GamePoint creationGamePoint, int lifeTime)
             : base(notMovedPolygon, angleRotateGradus, creationGamePoint)
         {
             if (lifeTime <= 0) throw new ArgumentException("Время жизни не может быть меньше либо равным нулю.");

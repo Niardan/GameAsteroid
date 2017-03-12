@@ -3,10 +3,11 @@ using GameEngineAsteroid.GamePrimitives;
 
 namespace GameEngineAsteroid.GameObjects
 {
+    //Класс отвечает за функциональность оружия "Лазер"
     public sealed class Laser : GameObject
     {
         private Player _player;
-        public int LifeTime { get; set; }
+        private int LifeTime { get; set; }
 
         public Laser(GamePoint[] notMovedPolygon, float angleRotateGradus, GamePoint creationGamePoint, int lifeTime, Player player)
             : base(notMovedPolygon, angleRotateGradus, creationGamePoint, true)
