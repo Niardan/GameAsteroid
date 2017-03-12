@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="43c0edec-9880-4c97-a3da-6771909db295"
+  name="GamePrimitives" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <appliedStereotypesInternal>
+    <stereotypeInstance
+      Id="221e3831-28c3-4673-bb7f-4ea56a8cb8c3"
+      name="namespace"
+      profile="CSharpProfile">
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="a25a772f-8d13-4334-a314-57999ea62ca4">
+          <propertyInstance
+            Id="1064e3ae-121b-4b32-b142-6375eb58bbcf"
+            name="BaseName" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="cd27d7ae-fd48-4b45-96a1-6265d7a86fa2">
+          <propertyInstance
+            Id="0e08298c-0985-4e0f-9b13-1034b280a9bf"
+            name="ClrAttributes" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="e2d0548e-ab73-447d-9175-27de320bba96">
+          <propertyInstance
+            Id="fd21abd0-4e9e-477c-aa75-0718707cb063"
+            name="Usings"
+            value="System" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+  </appliedStereotypesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="4a214f4d-b238-4dd6-969f-599a047458d3"
+        name="Float" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="57b984a9-ea1f-4cac-be64-481a78995d90"
+        name="GamePoint[0..*]" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="5be45d45-5eec-4662-92e2-772c81bd1503"
+        name="GameEngineAsteroidModels::GameEngineAsteroid::GameObjects::GamePrimitives::Polygon" />
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

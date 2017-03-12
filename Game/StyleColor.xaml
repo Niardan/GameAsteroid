@@ -1,0 +1,126 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:Game">
+
+    <Style TargetType="Canvas">
+        <Setter Property="Background" Value="#483C6C"></Setter>
+    </Style>
+    
+    <Style TargetType="TextBlock" x:Key="Header">
+        <Setter Property="Foreground">
+            <Setter.Value>
+                <LinearGradientBrush StartPoint="0,0.5" EndPoint="0,0">
+                    <GradientStop Color="#E6E6E6" Offset="0"/>
+                    <GradientStop Color="White" Offset="0"/>
+                </LinearGradientBrush>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="FontFamily" Value="./Resources/#Parangon 510C"></Setter>
+        <Setter Property="Margin" Value="10px"></Setter>
+    </Style>
+    
+    <Style TargetType="{x:Type Button}" x:Key="MainButton">
+        <Setter Property="Height" Value="100px"></Setter>
+        <Setter Property="Width" Value="350px"></Setter>
+        <Setter Property="Margin" Value="20"></Setter>
+        <Setter Property="Foreground" Value="White"></Setter>
+        <Setter Property="FontFamily" Value="./Resources/#Parangon 510C"></Setter>
+        <Setter Property="FontSize" Value="50px"></Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Grid Background="White">
+                        <Rectangle HorizontalAlignment="Stretch" VerticalAlignment="Bottom" Height="90" Margin="10 5 10 10" Fill="#1CD9AF" x:Name="MainLayer">
+                        </Rectangle>
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0 0 0 10" x:Name="MainText"/>
+                        <Rectangle HorizontalAlignment="Stretch" VerticalAlignment="Bottom" Height="45" Margin="10 5 10 10"
+                                   Fill="Black" Opacity="0.1" x:Name="Shadow"></Rectangle>
+                        <Rectangle HorizontalAlignment="Stretch" VerticalAlignment="Bottom" Height="5" Margin="10 5 10 10"
+                                   Fill="#1E8A71" x:Name="Thickness"></Rectangle>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter TargetName="MainLayer" Property="Margin" Value="10"></Setter>
+                            <Setter TargetName="MainLayer" Property="Height" Value="100"></Setter>
+                            <Setter TargetName="MainText" Property="Margin" Value="0"></Setter>
+                            <Setter TargetName="Shadow" Property="Margin" Value="10"></Setter>
+                            <Setter TargetName="Shadow" Property="Height" Value="40"></Setter>
+                            <Setter TargetName="Thickness" Property="Height" Value="0"></Setter>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style TargetType="Button" BasedOn="{StaticResource MainButton}" x:Key="SecondaryButton">
+        <Setter Property="Margin" Value="20 40 20 20"></Setter>
+        <Setter Property="FontSize" Value="40px"></Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Grid Background="White">
+                        <Rectangle HorizontalAlignment="Stretch" VerticalAlignment="Bottom" Height="90" Margin="10 5 10 10" Fill="#2A80B3" x:Name="MainLayer">
+                        </Rectangle>
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0 0 0 10" x:Name="MainText"/>
+                        <Rectangle HorizontalAlignment="Stretch" VerticalAlignment="Bottom" Height="45" Margin="10 5 10 10"
+                                   Fill="Black" Opacity="0.1" x:Name="Shadow"></Rectangle>
+                        <Rectangle HorizontalAlignment="Stretch" VerticalAlignment="Bottom" Height="5" Margin="10 5 10 10"
+                                   Fill="#276891" x:Name="Thickness"></Rectangle>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter TargetName="MainLayer" Property="Margin" Value="10"></Setter>
+                            <Setter TargetName="MainLayer" Property="Height" Value="100"></Setter>
+                            <Setter TargetName="MainText" Property="Margin" Value="0"></Setter>
+                            <Setter TargetName="Shadow" Property="Margin" Value="10"></Setter>
+                            <Setter TargetName="Shadow" Property="Height" Value="40"></Setter>
+                            <Setter TargetName="Thickness" Property="Height" Value="0"></Setter>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
+    <Style TargetType="Button" BasedOn="{StaticResource MainButton}" x:Key="PauseButton">
+        <Setter Property="Width" Value="105"></Setter>
+        </Style>
+
+        <Style TargetType="{x:Type Image}" x:Key="Icon">
+        <Setter Property="Height" Value="40px"></Setter>
+        <Setter Property="Margin" Value="30px 0 10px 0"></Setter>
+    </Style>
+
+    <Style TargetType="{x:Type TextBlock}" x:Key="MainText">
+        <Setter Property="TextAlignment" Value="Center"></Setter>
+        <Setter Property="Width" Value="280px"></Setter>
+        <Setter Property="Margin" Value="0 5px 0 0"></Setter>
+    </Style>
+    
+    <Style TargetType="TextBlock" BasedOn="{StaticResource MainText}" x:Key="GreenText">
+        <Setter Property="Margin" Value="-50px 0 0 0"></Setter>
+    </Style>
+
+    <Style TargetType="{x:Type DockPanel}" x:Key="ButtonPanel">
+        <Setter Property="Width" Value="330px"></Setter>
+        <Setter Property="HorizontalAlignment" Value="Stretch"></Setter>
+    </Style>
+    
+    <Style TargetType="{x:Type TextBlock}" x:Key="Laser">
+        <Setter Property="Height" Value="40"></Setter>
+        <Setter Property="Width" Value="20"></Setter>
+        <Setter Property="HorizontalAlignment" Value="Left"></Setter>
+        <Setter Property="VerticalAlignment" Value="Bottom"></Setter>
+        <Setter Property="Margin" Value="5"></Setter>
+        <Setter Property="Background">
+            <Setter.Value>
+                <LinearGradientBrush StartPoint="0,0.5" EndPoint="0,0">
+                    <GradientStop Color="#19BD9B" Offset="0"/>
+                    <GradientStop Color="#1CD9AF" Offset="0"/>
+                </LinearGradientBrush>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>

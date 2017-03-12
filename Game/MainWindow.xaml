@@ -1,0 +1,62 @@
+﻿<Window x:Class="Game.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Game"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="800" Width="1300" WindowStartupLocation="CenterScreen" KeyDown="Window_KeyDown" KeyUp="Window_KeyUp" SizeChanged="Window_SizeChanged">
+    <Grid>
+        <Canvas Name="GameFieldCanvas">
+        </Canvas>
+        <Grid Margin="20">
+            <Button Name="PauseButton" Style="{DynamicResource PauseButton}" HorizontalAlignment="Left" VerticalAlignment="Top" Click="PauseButton_OnClick">
+                <Image Source="Resources/Icon_pause.png" Height="40"></Image>
+            </Button>
+            <DockPanel HorizontalAlignment="Right">
+                <TextBlock Style="{DynamicResource  Header}" FontSize="60px">СЧЕТ:</TextBlock>
+                <TextBlock Name="Score" Style="{DynamicResource  Header}" FontSize="60px">0000</TextBlock>
+            </DockPanel>
+            <DockPanel >
+                <TextBlock Style="{DynamicResource  Header}" FontSize="50" VerticalAlignment="Bottom" Margin="0 0 0 -10">ЛАЗЕР</TextBlock>
+                <DockPanel  Name="LaserPanel">
+                </DockPanel>
+            </DockPanel>
+        </Grid>
+        
+        <StackPanel Name="GameMenu"  Width="600" VerticalAlignment="Center">
+            <TextBlock Name="MenuHeader" Style="{DynamicResource Header}" FontSize="70" HorizontalAlignment="Center">АСТЕРОИДЫ</TextBlock>
+            <DockPanel Name="GameOverPanelScore" HorizontalAlignment="Center" Margin="0 -20 0 0" Visibility="Collapsed">
+                <TextBlock Style="{DynamicResource Header}" FontSize="40">СЧЕТ:</TextBlock>
+                <TextBlock Name="ScoreGameOver" Style="{DynamicResource  Header}" FontSize="40px">0000</TextBlock>
+            </DockPanel>
+            <Button Name="StartButton" Click="StartButton_OnClick" Style="{DynamicResource  MainButton}">
+                <DockPanel Style="{DynamicResource  ButtonPanel}">
+                    <Image Source="Resources/Icon_Play.png" Style="{DynamicResource  Icon}"></Image>
+                    <TextBlock Style="{DynamicResource  GreenText}" >ИГРАТЬ</TextBlock>
+                </DockPanel>
+            </Button>
+            <Button Name="NewGameButton" Click="StartButton_OnClick" Style="{DynamicResource  MainButton}" Visibility="Collapsed">
+                <DockPanel Style="{DynamicResource  ButtonPanel}">
+                    <Image Source="Resources/Icon_Replay.png" Style="{DynamicResource  Icon}"></Image>
+                    <TextBlock Style="{DynamicResource  GreenText}" >ЗАНОВО</TextBlock>
+                </DockPanel>
+            </Button>
+            <Button Name="ContinueButton" Click="ContinueButton_OnClick" Style="{DynamicResource  MainButton}" Visibility="Collapsed">
+                <DockPanel Style="{DynamicResource  ButtonPanel}">
+                    <Image Source="Resources/Icon_Play.png" Style="{DynamicResource  Icon}"></Image>
+                    <TextBlock Style="{DynamicResource  GreenText}" >НАЗАД</TextBlock>
+                </DockPanel>
+            </Button>
+            <Button Name="Exit" Click="Exit_OnClick" Style="{DynamicResource  MainButton}">
+                <DockPanel Style="{DynamicResource  ButtonPanel}">
+                    <Image Source="Resources/Icon_Exit.png" Style="{DynamicResource  Icon}"></Image>
+                    <TextBlock Style="{DynamicResource  GreenText}">ВЫХОД</TextBlock>
+                </DockPanel>
+            </Button>
+            <Button Click="ButtonBase_OnClick" Style="{DynamicResource  SecondaryButton}">
+                <TextBlock  Style="{DynamicResource  MainText}">СМЕНА ГРАФИКИ</TextBlock>
+            </Button>
+        </StackPanel>
+    </Grid>
+</Window>

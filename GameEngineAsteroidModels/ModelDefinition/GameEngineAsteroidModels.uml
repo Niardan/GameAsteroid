@@ -1,0 +1,2556 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner"
+  dslVersion="1.0.0.0"
+  Id="83d5bd94-232d-4409-9b9e-64b0166bdbee"
+  name="GameEngineAsteroidModels" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <appliedStereotypesInternal>
+    <stereotypeInstance
+      Id="de0c3dcf-d8fb-4ae4-8627-52d390a0d289"
+      name="namespace"
+      profile="CSharpProfile">
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="272a091e-ad63-4825-bf0a-56b870e26fa0">
+          <propertyInstance
+            Id="e1952a94-17a2-4852-aeca-86e4ff3ada29"
+            name="BaseName" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="4072d83e-55ec-4de7-ab17-2f98773be7f8">
+          <propertyInstance
+            Id="cfb8c95a-365a-46f8-8f12-5bedfbbfe8ac"
+            name="ClrAttributes" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances
+          Id="a624aa99-f1a4-4ab6-9218-6599568a2103">
+          <propertyInstance
+            Id="e2c0b992-cbab-444a-9a6d-8fd12c7e1439"
+            name="Usings"
+            value="System" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+  </appliedStereotypesInternal>
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="841e70f9-83ba-4eba-ae10-11ed70b4020e">
+      <profileInstance
+        Id="71878181-18fd-426a-96ff-e3fc7efee7e7"
+        name="CSharpProfile" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="9a9f907c-e9cc-434a-bbd7-c2c2f405a272"
+        LastKnownName="GameEngineAsteroid"
+        LastKnownLocation="Package_2033.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <interaction
+        Id="0c84d89f-bd45-4a07-8e28-aabc91a47e61"
+        name="UMLSequenceGameAngineAsteroid"
+        collapseFragmentsFlag="false"
+        isActiveClass="false"
+        isAbstract="false"
+        isLeaf="false"
+        isReentrant="false">
+        <fragments>
+          <behaviorExecutionSpecification
+            Id="1aca0f44-e145-4143-9721-1c0d707308d8"
+            name="BehaviorExecutionSpecification2">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="10dd5123-09e1-4d22-8a10-ec44f5c10a1f"
+                LastKnownName="Game"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="528d0c36-a460-4011-9094-3f604cf5510d"
+                LastKnownName="ExecutionOccurrenceSpecification4"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="7e3aaf0f-d679-47d5-9c08-95ee10401868"
+                LastKnownName="ExecutionOccurrenceSpecification3"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="0ac49def-18f8-4012-b6ca-ccf200962563"
+                LastKnownName="MessageOccurrenceSpecification7"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="b137fa77-ba3f-4a6c-bb7f-6f3eaf098ae1"
+                LastKnownName="MessageOccurrenceSpecification19"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="7e3aaf0f-d679-47d5-9c08-95ee10401868"
+            name="ExecutionOccurrenceSpecification3">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="31b063bf-d012-406d-a234-1a4d1e7faa20"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="GameEngineAsteroidModels.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="10dd5123-09e1-4d22-8a10-ec44f5c10a1f"
+                LastKnownName="Game"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="613fba55-60a8-4346-948a-b4b3dc7b6d3a"
+            name="MessageOccurrenceSpecification6">
+            <covered>
+              <lifelineMoniker
+                Id="fb558019-39b3-4c89-8e3e-e842a719f9a1"
+                LastKnownName="Игрок"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="0ac49def-18f8-4012-b6ca-ccf200962563"
+            name="MessageOccurrenceSpecification7">
+            <covered>
+              <lifelineMoniker
+                Id="10dd5123-09e1-4d22-8a10-ec44f5c10a1f"
+                LastKnownName="Game"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="a4981346-aa89-427b-bf50-4ea14d57bebf"
+            name="BehaviorExecutionSpecification7">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="2f2635cf-6232-4f3b-bf2d-8dd7a535d554"
+                LastKnownName="Player"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="5c373ed7-9951-4e77-9dce-81446b30792b"
+                LastKnownName="ExecutionOccurrenceSpecification14"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="e1943922-c67c-4d2e-9ce6-a4f2aeeae29e"
+                LastKnownName="ExecutionOccurrenceSpecification13"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="c22c665e-f4cc-4481-8335-79fef5d8efe0"
+                LastKnownName="MessageOccurrenceSpecification20"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="6aaa9ef8-2ee8-4693-820b-16d13a05a4a3"
+                LastKnownName="MessageOccurrenceSpecification33"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="e1943922-c67c-4d2e-9ce6-a4f2aeeae29e"
+            name="ExecutionOccurrenceSpecification13">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="deff0e42-4dd6-499c-a5f6-7eef1cee540d"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="GameEngineAsteroidModels.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="2f2635cf-6232-4f3b-bf2d-8dd7a535d554"
+                LastKnownName="Player"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="b137fa77-ba3f-4a6c-bb7f-6f3eaf098ae1"
+            name="MessageOccurrenceSpecification19">
+            <covered>
+              <lifelineMoniker
+                Id="10dd5123-09e1-4d22-8a10-ec44f5c10a1f"
+                LastKnownName="Game"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="c22c665e-f4cc-4481-8335-79fef5d8efe0"
+            name="MessageOccurrenceSpecification20">
+            <covered>
+              <lifelineMoniker
+                Id="2f2635cf-6232-4f3b-bf2d-8dd7a535d554"
+                LastKnownName="Player"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="528d0c36-a460-4011-9094-3f604cf5510d"
+            name="ExecutionOccurrenceSpecification4">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="9ee2edcd-28b7-4b08-ac9b-8f5acbe71190"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="GameEngineAsteroidModels.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="10dd5123-09e1-4d22-8a10-ec44f5c10a1f"
+                LastKnownName="Game"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="ce36ad65-cb43-48a5-ae8a-47c9c9f01e56"
+            name="BehaviorExecutionSpecification13">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="80b0d1cc-ef4f-4d7b-9878-9b94c3c8b105"
+                LastKnownName="GameField"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="41e9e5ca-4c48-46b4-aa36-4e84ab9d7393"
+                LastKnownName="ExecutionOccurrenceSpecification26"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="7deb3ba0-af73-4992-803e-b94673bd5a1a"
+                LastKnownName="ExecutionOccurrenceSpecification25"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="e9513901-26f2-4d98-b028-2edf96a864c9"
+                LastKnownName="MessageOccurrenceSpecification34"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="35c7f8cb-8d1e-4095-86fc-4de07ceaaee4"
+                LastKnownName="MessageOccurrenceSpecification35"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="7deb3ba0-af73-4992-803e-b94673bd5a1a"
+            name="ExecutionOccurrenceSpecification25">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="9ad75b62-9e67-4ec0-aa3b-91ad0d93e165"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="GameEngineAsteroidModels.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="80b0d1cc-ef4f-4d7b-9878-9b94c3c8b105"
+                LastKnownName="GameField"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="6aaa9ef8-2ee8-4693-820b-16d13a05a4a3"
+            name="MessageOccurrenceSpecification33">
+            <covered>
+              <lifelineMoniker
+                Id="2f2635cf-6232-4f3b-bf2d-8dd7a535d554"
+                LastKnownName="Player"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="e9513901-26f2-4d98-b028-2edf96a864c9"
+            name="MessageOccurrenceSpecification34">
+            <covered>
+              <lifelineMoniker
+                Id="80b0d1cc-ef4f-4d7b-9878-9b94c3c8b105"
+                LastKnownName="GameField"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="1623afb8-19ce-44db-aca7-3914d9fc427d"
+            name="BehaviorExecutionSpecification14">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="10dd5123-09e1-4d22-8a10-ec44f5c10a1f"
+                LastKnownName="Game"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="a3f6e0f0-a749-4420-9e36-94920eba2725"
+                LastKnownName="ExecutionOccurrenceSpecification28"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="930016a1-a5f2-4b31-bff9-64338babf344"
+                LastKnownName="ExecutionOccurrenceSpecification27"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="d193b326-c8c0-4e38-8352-f6c5b1e1eb3b"
+                LastKnownName="MessageOccurrenceSpecification36"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="930016a1-a5f2-4b31-bff9-64338babf344"
+            name="ExecutionOccurrenceSpecification27">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="476482f2-3c2e-43b7-872c-04e4206e6c8d"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="GameEngineAsteroidModels.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="10dd5123-09e1-4d22-8a10-ec44f5c10a1f"
+                LastKnownName="Game"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="5c373ed7-9951-4e77-9dce-81446b30792b"
+            name="ExecutionOccurrenceSpecification14">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="dd0b35f6-7502-4677-9cca-0080b91dfda9"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="GameEngineAsteroidModels.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="2f2635cf-6232-4f3b-bf2d-8dd7a535d554"
+                LastKnownName="Player"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="d193b326-c8c0-4e38-8352-f6c5b1e1eb3b"
+            name="MessageOccurrenceSpecification36">
+            <covered>
+              <lifelineMoniker
+                Id="10dd5123-09e1-4d22-8a10-ec44f5c10a1f"
+                LastKnownName="Game"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="35c7f8cb-8d1e-4095-86fc-4de07ceaaee4"
+            name="MessageOccurrenceSpecification35">
+            <covered>
+              <lifelineMoniker
+                Id="80b0d1cc-ef4f-4d7b-9878-9b94c3c8b105"
+                LastKnownName="GameField"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="a3f6e0f0-a749-4420-9e36-94920eba2725"
+            name="ExecutionOccurrenceSpecification28">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="73fdf9ce-4e74-4a05-851f-239bfa6e09c3"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="GameEngineAsteroidModels.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="10dd5123-09e1-4d22-8a10-ec44f5c10a1f"
+                LastKnownName="Game"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="41e9e5ca-4c48-46b4-aa36-4e84ab9d7393"
+            name="ExecutionOccurrenceSpecification26">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="7298aee0-7bc8-4a6b-b9a1-7a8f648568e7"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="GameEngineAsteroidModels.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="80b0d1cc-ef4f-4d7b-9878-9b94c3c8b105"
+                LastKnownName="GameField"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="5bbc4dea-91c7-42f4-9ca6-431cbe4a5064"
+            name="BehaviorExecutionSpecification11">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="10dd5123-09e1-4d22-8a10-ec44f5c10a1f"
+                LastKnownName="Game"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="915edd04-882e-4a83-a7d0-6e00e80a3e74"
+                LastKnownName="ExecutionOccurrenceSpecification22"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="a34b007a-5908-41ff-bfde-35609c4735ec"
+                LastKnownName="ExecutionOccurrenceSpecification21"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="110ee35d-9bfd-4628-bb02-7f4f8c02f2f5"
+                LastKnownName="MessageOccurrenceSpecification30"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="ddf22ec2-a7a4-45ef-ab73-c155403d346f"
+                LastKnownName="MessageOccurrenceSpecification31"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="a34b007a-5908-41ff-bfde-35609c4735ec"
+            name="ExecutionOccurrenceSpecification21">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="120eb23e-bf2e-4b79-8d7c-ee84e664a590"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="GameEngineAsteroidModels.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="10dd5123-09e1-4d22-8a10-ec44f5c10a1f"
+                LastKnownName="Game"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="110ee35d-9bfd-4628-bb02-7f4f8c02f2f5"
+            name="MessageOccurrenceSpecification30">
+            <covered>
+              <lifelineMoniker
+                Id="10dd5123-09e1-4d22-8a10-ec44f5c10a1f"
+                LastKnownName="Game"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="1de96acc-321c-49b3-9844-346b30458ac2"
+            name="MessageOccurrenceSpecification29">
+            <covered>
+              <lifelineMoniker
+                Id="fb558019-39b3-4c89-8e3e-e842a719f9a1"
+                LastKnownName="Игрок"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="b533fd47-ec18-4d6e-8528-2a685617cc44"
+            name="BehaviorExecutionSpecification12">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="2f2635cf-6232-4f3b-bf2d-8dd7a535d554"
+                LastKnownName="Player"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="de945b1e-4e83-4313-b24e-adb3c13b9d6d"
+                LastKnownName="ExecutionOccurrenceSpecification24"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="addc5f0e-aec9-4b51-8ed6-2a8d74e86f44"
+                LastKnownName="ExecutionOccurrenceSpecification23"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="dcbea4bb-4208-4d09-8ba0-f24ac8f29063"
+                LastKnownName="MessageOccurrenceSpecification32"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="addc5f0e-aec9-4b51-8ed6-2a8d74e86f44"
+            name="ExecutionOccurrenceSpecification23">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="54d6057b-0339-4814-9d4c-27596bbd71e5"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="GameEngineAsteroidModels.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="2f2635cf-6232-4f3b-bf2d-8dd7a535d554"
+                LastKnownName="Player"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="ddf22ec2-a7a4-45ef-ab73-c155403d346f"
+            name="MessageOccurrenceSpecification31">
+            <covered>
+              <lifelineMoniker
+                Id="10dd5123-09e1-4d22-8a10-ec44f5c10a1f"
+                LastKnownName="Game"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="dcbea4bb-4208-4d09-8ba0-f24ac8f29063"
+            name="MessageOccurrenceSpecification32">
+            <covered>
+              <lifelineMoniker
+                Id="2f2635cf-6232-4f3b-bf2d-8dd7a535d554"
+                LastKnownName="Player"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="915edd04-882e-4a83-a7d0-6e00e80a3e74"
+            name="ExecutionOccurrenceSpecification22">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="ca3b1eb0-9a6d-4c68-9a0c-951774cd7e16"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="GameEngineAsteroidModels.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="10dd5123-09e1-4d22-8a10-ec44f5c10a1f"
+                LastKnownName="Game"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="de945b1e-4e83-4313-b24e-adb3c13b9d6d"
+            name="ExecutionOccurrenceSpecification24">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="b7db4eaf-9152-4f06-991e-cb174017fb10"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="GameEngineAsteroidModels.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="2f2635cf-6232-4f3b-bf2d-8dd7a535d554"
+                LastKnownName="Player"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="bc1eb21e-4c9f-40ff-a8c1-1a57cedc3949"
+            name="BehaviorExecutionSpecification15">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="80b0d1cc-ef4f-4d7b-9878-9b94c3c8b105"
+                LastKnownName="GameField"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="96484b30-8b35-4f24-ab4d-3c83b16c86f8"
+                LastKnownName="ExecutionOccurrenceSpecification30"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="759c6a16-1909-4a7b-8350-999983047ad8"
+                LastKnownName="ExecutionOccurrenceSpecification29"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="36f559f7-d8be-4d01-9839-70e0cac9f4da"
+                LastKnownName="MessageOccurrenceSpecification38"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="893acbf2-3216-4c2d-a533-41d31e9272c3"
+                LastKnownName="MessageOccurrenceSpecification39"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="759c6a16-1909-4a7b-8350-999983047ad8"
+            name="ExecutionOccurrenceSpecification29">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="96dcef55-57f6-4ed4-93d5-79f75cd0e539"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="GameEngineAsteroidModels.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="80b0d1cc-ef4f-4d7b-9878-9b94c3c8b105"
+                LastKnownName="GameField"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="36f559f7-d8be-4d01-9839-70e0cac9f4da"
+            name="MessageOccurrenceSpecification38">
+            <covered>
+              <lifelineMoniker
+                Id="80b0d1cc-ef4f-4d7b-9878-9b94c3c8b105"
+                LastKnownName="GameField"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="beab6e38-87bf-47d2-b8e1-fbcbfbc5967c"
+            name="MessageOccurrenceSpecification37">
+            <covered>
+              <lifelineMoniker
+                Id="2f2635cf-6232-4f3b-bf2d-8dd7a535d554"
+                LastKnownName="Player"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="59984fcc-df82-4350-8a65-6e18db5c2d0b"
+            name="BehaviorExecutionSpecification16">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="10dd5123-09e1-4d22-8a10-ec44f5c10a1f"
+                LastKnownName="Game"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="ce394d43-7d7d-4c43-8daf-0b4e40f10e8f"
+                LastKnownName="ExecutionOccurrenceSpecification32"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="77cf7909-d8eb-4724-bc2a-38aa4f6e2eb5"
+                LastKnownName="ExecutionOccurrenceSpecification31"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="0804944a-b3c1-4799-b7e2-da61c31587d2"
+                LastKnownName="MessageOccurrenceSpecification40"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="77cf7909-d8eb-4724-bc2a-38aa4f6e2eb5"
+            name="ExecutionOccurrenceSpecification31">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="fbf3a038-efae-42de-9a1a-e6d54dc03153"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="GameEngineAsteroidModels.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="10dd5123-09e1-4d22-8a10-ec44f5c10a1f"
+                LastKnownName="Game"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="893acbf2-3216-4c2d-a533-41d31e9272c3"
+            name="MessageOccurrenceSpecification39">
+            <covered>
+              <lifelineMoniker
+                Id="80b0d1cc-ef4f-4d7b-9878-9b94c3c8b105"
+                LastKnownName="GameField"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="0804944a-b3c1-4799-b7e2-da61c31587d2"
+            name="MessageOccurrenceSpecification40">
+            <covered>
+              <lifelineMoniker
+                Id="10dd5123-09e1-4d22-8a10-ec44f5c10a1f"
+                LastKnownName="Game"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="96484b30-8b35-4f24-ab4d-3c83b16c86f8"
+            name="ExecutionOccurrenceSpecification30">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="fe4412b2-cce7-4ba2-a0c4-473f116c891c"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="GameEngineAsteroidModels.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="80b0d1cc-ef4f-4d7b-9878-9b94c3c8b105"
+                LastKnownName="GameField"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="ce394d43-7d7d-4c43-8daf-0b4e40f10e8f"
+            name="ExecutionOccurrenceSpecification32">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="fe426d6d-72ca-4344-b96e-a4f208f0c444"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="GameEngineAsteroidModels.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="10dd5123-09e1-4d22-8a10-ec44f5c10a1f"
+                LastKnownName="Game"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+        </fragments>
+        <lifelines>
+          <lifeline
+            Id="fb558019-39b3-4c89-8e3e-e842a719f9a1"
+            name="Игрок"
+            isActor="false"
+            lifelineDisplayName="Игрок">
+            <topLevelOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="613fba55-60a8-4346-948a-b4b3dc7b6d3a"
+                LastKnownName="MessageOccurrenceSpecification6"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="1de96acc-321c-49b3-9844-346b30458ac2"
+                LastKnownName="MessageOccurrenceSpecification29"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="10dd5123-09e1-4d22-8a10-ec44f5c10a1f"
+            name="Game"
+            isActor="false"
+            lifelineDisplayName="Game">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="7e3aaf0f-d679-47d5-9c08-95ee10401868"
+                LastKnownName="ExecutionOccurrenceSpecification3"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="528d0c36-a460-4011-9094-3f604cf5510d"
+                LastKnownName="ExecutionOccurrenceSpecification4"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="930016a1-a5f2-4b31-bff9-64338babf344"
+                LastKnownName="ExecutionOccurrenceSpecification27"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="a3f6e0f0-a749-4420-9e36-94920eba2725"
+                LastKnownName="ExecutionOccurrenceSpecification28"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="a34b007a-5908-41ff-bfde-35609c4735ec"
+                LastKnownName="ExecutionOccurrenceSpecification21"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="915edd04-882e-4a83-a7d0-6e00e80a3e74"
+                LastKnownName="ExecutionOccurrenceSpecification22"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="77cf7909-d8eb-4724-bc2a-38aa4f6e2eb5"
+                LastKnownName="ExecutionOccurrenceSpecification31"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="ce394d43-7d7d-4c43-8daf-0b4e40f10e8f"
+                LastKnownName="ExecutionOccurrenceSpecification32"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="80b0d1cc-ef4f-4d7b-9878-9b94c3c8b105"
+            name="GameField"
+            isActor="false"
+            lifelineDisplayName="GameField">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="7deb3ba0-af73-4992-803e-b94673bd5a1a"
+                LastKnownName="ExecutionOccurrenceSpecification25"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="41e9e5ca-4c48-46b4-aa36-4e84ab9d7393"
+                LastKnownName="ExecutionOccurrenceSpecification26"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="759c6a16-1909-4a7b-8350-999983047ad8"
+                LastKnownName="ExecutionOccurrenceSpecification29"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="96484b30-8b35-4f24-ab4d-3c83b16c86f8"
+                LastKnownName="ExecutionOccurrenceSpecification30"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="2f2635cf-6232-4f3b-bf2d-8dd7a535d554"
+            name="Player"
+            isActor="false"
+            lifelineDisplayName="Player">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="e1943922-c67c-4d2e-9ce6-a4f2aeeae29e"
+                LastKnownName="ExecutionOccurrenceSpecification13"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="5c373ed7-9951-4e77-9dce-81446b30792b"
+                LastKnownName="ExecutionOccurrenceSpecification14"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="addc5f0e-aec9-4b51-8ed6-2a8d74e86f44"
+                LastKnownName="ExecutionOccurrenceSpecification23"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="de945b1e-4e83-4313-b24e-adb3c13b9d6d"
+                LastKnownName="ExecutionOccurrenceSpecification24"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="beab6e38-87bf-47d2-b8e1-fbcbfbc5967c"
+                LastKnownName="MessageOccurrenceSpecification37"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+        </lifelines>
+        <messages>
+          <message
+            Id="8c8a4975-c442-48b1-900b-0f9555f971d0"
+            name="Нажимает кнопку (вперед, вправо, влево)"
+            messageKind="Complete"
+            messageSort="AsynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="613fba55-60a8-4346-948a-b4b3dc7b6d3a"
+                LastKnownName="MessageOccurrenceSpecification6"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="0ac49def-18f8-4012-b6ca-ccf200962563"
+                LastKnownName="MessageOccurrenceSpecification7"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="04e18769-439e-4fbc-8eb2-00bdee7c9a56"
+            name="StartMove,StartRotateRight, StartRotateLeft"
+            messageKind="Complete"
+            messageSort="AsynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="b137fa77-ba3f-4a6c-bb7f-6f3eaf098ae1"
+                LastKnownName="MessageOccurrenceSpecification19"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="c22c665e-f4cc-4481-8335-79fef5d8efe0"
+                LastKnownName="MessageOccurrenceSpecification20"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="03069c03-acc2-4514-8b8f-0102a2269509"
+            name="Движение"
+            messageKind="Complete"
+            messageSort="AsynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="6aaa9ef8-2ee8-4693-820b-16d13a05a4a3"
+                LastKnownName="MessageOccurrenceSpecification33"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="e9513901-26f2-4d98-b028-2edf96a864c9"
+                LastKnownName="MessageOccurrenceSpecification34"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="1880f67d-10b5-446b-b952-e3e345125cea"
+            name="Отображение движения"
+            messageKind="Complete"
+            messageSort="AsynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="35c7f8cb-8d1e-4095-86fc-4de07ceaaee4"
+                LastKnownName="MessageOccurrenceSpecification35"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="d193b326-c8c0-4e38-8352-f6c5b1e1eb3b"
+                LastKnownName="MessageOccurrenceSpecification36"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="29842370-85a3-4803-a6a6-3ea311c60dd3"
+            name="Отпускает кнопку (вперед, вправо, влево)"
+            messageKind="Complete"
+            messageSort="AsynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="1de96acc-321c-49b3-9844-346b30458ac2"
+                LastKnownName="MessageOccurrenceSpecification29"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="110ee35d-9bfd-4628-bb02-7f4f8c02f2f5"
+                LastKnownName="MessageOccurrenceSpecification30"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="003864c4-900f-444c-9e93-d96ef7b39a43"
+            name="StopMove,StopRotateRight, StopRotateLeft"
+            messageKind="Complete"
+            messageSort="AsynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="ddf22ec2-a7a4-45ef-ab73-c155403d346f"
+                LastKnownName="MessageOccurrenceSpecification31"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="dcbea4bb-4208-4d09-8ba0-f24ac8f29063"
+                LastKnownName="MessageOccurrenceSpecification32"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="9e7d9da9-cff1-4c73-853a-14fcc7ebdcaa"
+            name="Остановка"
+            messageKind="Complete"
+            messageSort="AsynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="beab6e38-87bf-47d2-b8e1-fbcbfbc5967c"
+                LastKnownName="MessageOccurrenceSpecification37"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="36f559f7-d8be-4d01-9839-70e0cac9f4da"
+                LastKnownName="MessageOccurrenceSpecification38"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="148497f2-d400-4296-a191-ddc2b046d1a9"
+            name="Остановка"
+            messageKind="Complete"
+            messageSort="AsynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="893acbf2-3216-4c2d-a533-41d31e9272c3"
+                LastKnownName="MessageOccurrenceSpecification39"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="0804944a-b3c1-4799-b7e2-da61c31587d2"
+                LastKnownName="MessageOccurrenceSpecification40"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </receiveEvent>
+          </message>
+        </messages>
+      </interaction>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="31b063bf-d012-406d-a234-1a4d1e7faa20"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="9ee2edcd-28b7-4b08-ac9b-8f5acbe71190"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="deff0e42-4dd6-499c-a5f6-7eef1cee540d"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="dd0b35f6-7502-4677-9cca-0080b91dfda9"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="120eb23e-bf2e-4b79-8d7c-ee84e664a590"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="ca3b1eb0-9a6d-4c68-9a0c-951774cd7e16"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="54d6057b-0339-4814-9d4c-27596bbd71e5"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="b7db4eaf-9152-4f06-991e-cb174017fb10"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="9ad75b62-9e67-4ec0-aa3b-91ad0d93e165"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="7298aee0-7bc8-4a6b-b9a1-7a8f648568e7"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="476482f2-3c2e-43b7-872c-04e4206e6c8d"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="73fdf9ce-4e74-4a05-851f-239bfa6e09c3"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="96dcef55-57f6-4ed4-93d5-79f75cd0e539"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="fe4412b2-cce7-4ba2-a0c4-473f116c891c"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="fbf3a038-efae-42de-9a1a-e6d54dc03153"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="fe426d6d-72ca-4344-b96e-a4f208f0c444"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <interaction
+        Id="71458de0-6cc9-4814-ba19-67ff8f3238d2"
+        name="Выстрел"
+        collapseFragmentsFlag="false"
+        isActiveClass="false"
+        isAbstract="false"
+        isLeaf="false"
+        isReentrant="false">
+        <fragments>
+          <behaviorExecutionSpecification
+            Id="fd82e82a-ad61-424c-83c8-d996338540c6"
+            name="BehaviorExecutionSpecification2">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="c679bd7d-d058-4f28-90c9-1fa2dbb0fc5a"
+                LastKnownName="Game"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="e992e75c-3a50-4836-b663-4ef1a8cfda25"
+                LastKnownName="ExecutionOccurrenceSpecification4"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="9b493c43-fb4a-4e16-8165-286105dfb086"
+                LastKnownName="ExecutionOccurrenceSpecification3"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="9d6b36b0-d741-4b76-b311-015da31e32de"
+                LastKnownName="MessageOccurrenceSpecification4"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="405fb9b2-c4a4-411d-8856-c4df53fcb0e3"
+                LastKnownName="MessageOccurrenceSpecification11"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="da59c171-8c11-497a-abd9-1a05b287d7d4"
+                LastKnownName="MessageOccurrenceSpecification14"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="ff7defae-8339-4755-b12a-2ba2eb2a1398"
+                LastKnownName="MessageOccurrenceSpecification5"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="9b493c43-fb4a-4e16-8165-286105dfb086"
+            name="ExecutionOccurrenceSpecification3">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="75b3e461-0e37-468c-8522-3b7b97132e2d"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="GameEngineAsteroidModels.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="c679bd7d-d058-4f28-90c9-1fa2dbb0fc5a"
+                LastKnownName="Game"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="7681e487-b2ba-4f83-888e-b26b98ff737c"
+            name="MessageOccurrenceSpecification3">
+            <covered>
+              <lifelineMoniker
+                Id="8b6c2786-1a15-4ffa-8eec-936fe42177de"
+                LastKnownName="Игрок"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="9d6b36b0-d741-4b76-b311-015da31e32de"
+            name="MessageOccurrenceSpecification4">
+            <covered>
+              <lifelineMoniker
+                Id="c679bd7d-d058-4f28-90c9-1fa2dbb0fc5a"
+                LastKnownName="Game"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="b7939737-cf20-4e67-92f3-135211d45085"
+            name="BehaviorExecutionSpecification4">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="fc199d06-aaae-4460-9232-c007548468b7"
+                LastKnownName="Player"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="37d1e124-b4be-4209-9629-dce4a5bbd139"
+                LastKnownName="ExecutionOccurrenceSpecification8"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="a648fe66-fa3e-4d9a-bdf5-dce22aa3b620"
+                LastKnownName="ExecutionOccurrenceSpecification7"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="27b69084-d170-4fb1-ba66-e529603ad7df"
+                LastKnownName="MessageOccurrenceSpecification12"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="6feff258-00bd-4e1f-af2b-2b49ae5ff6b1"
+                LastKnownName="MessageOccurrenceSpecification15"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="e9c2dc52-57ef-4de7-8b1c-d246e6a13c46"
+                LastKnownName="MessageOccurrenceSpecification18"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="89f639b1-ca5a-4665-a0de-fce7bc6dbf8d"
+                LastKnownName="MessageOccurrenceSpecification13"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="a648fe66-fa3e-4d9a-bdf5-dce22aa3b620"
+            name="ExecutionOccurrenceSpecification7">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="1c91cf98-b4b9-4bfa-8961-0b99bc103896"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="GameEngineAsteroidModels.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="fc199d06-aaae-4460-9232-c007548468b7"
+                LastKnownName="Player"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="405fb9b2-c4a4-411d-8856-c4df53fcb0e3"
+            name="MessageOccurrenceSpecification11">
+            <covered>
+              <lifelineMoniker
+                Id="c679bd7d-d058-4f28-90c9-1fa2dbb0fc5a"
+                LastKnownName="Game"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="27b69084-d170-4fb1-ba66-e529603ad7df"
+            name="MessageOccurrenceSpecification12">
+            <covered>
+              <lifelineMoniker
+                Id="fc199d06-aaae-4460-9232-c007548468b7"
+                LastKnownName="Player"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="b1ab24bd-2144-43d9-a503-6e582ca2c9d3"
+            name="BehaviorExecutionSpecification5">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="79b25861-3ac1-4646-978e-602ac7d5d2b6"
+                LastKnownName="Weapon"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="ca3f72f6-6997-4d05-8084-8e915f23fcca"
+                LastKnownName="ExecutionOccurrenceSpecification10"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="95832c49-0294-4bac-b412-a17be0665f46"
+                LastKnownName="ExecutionOccurrenceSpecification9"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="47ecbbc2-dcb7-43bc-ba87-70d90d0f544a"
+                LastKnownName="MessageOccurrenceSpecification16"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="8678daed-7d50-4a96-be37-22d41f1e208e"
+                LastKnownName="MessageOccurrenceSpecification23"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="1e623210-2332-44b5-9ae9-aaf67b34256c"
+                LastKnownName="MessageOccurrenceSpecification26"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="c698a932-24f2-415a-bb39-a9680aea91f5"
+                LastKnownName="MessageOccurrenceSpecification17"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="95832c49-0294-4bac-b412-a17be0665f46"
+            name="ExecutionOccurrenceSpecification9">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="744ea5f0-c776-4d35-b592-ee5b80514494"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="GameEngineAsteroidModels.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="79b25861-3ac1-4646-978e-602ac7d5d2b6"
+                LastKnownName="Weapon"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="6feff258-00bd-4e1f-af2b-2b49ae5ff6b1"
+            name="MessageOccurrenceSpecification15">
+            <covered>
+              <lifelineMoniker
+                Id="fc199d06-aaae-4460-9232-c007548468b7"
+                LastKnownName="Player"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="47ecbbc2-dcb7-43bc-ba87-70d90d0f544a"
+            name="MessageOccurrenceSpecification16">
+            <covered>
+              <lifelineMoniker
+                Id="79b25861-3ac1-4646-978e-602ac7d5d2b6"
+                LastKnownName="Weapon"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="1a833ca0-f306-436e-b786-04de833409e6"
+            name="BehaviorExecutionSpecification7">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="c4daed19-afdc-4d13-bf18-6adccf9a3b17"
+                LastKnownName="Bullet"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="544ac057-41e3-4cc7-9915-79b2bffb0180"
+                LastKnownName="ExecutionOccurrenceSpecification14"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="e4a8dd18-9e98-401a-98b3-edd9052b7bb9"
+                LastKnownName="ExecutionOccurrenceSpecification13"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="10a96e40-ea4d-4530-ac4c-693856c43db4"
+                LastKnownName="MessageOccurrenceSpecification24"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="abca9b6b-37a2-4df7-8b95-3b8284edc377"
+                LastKnownName="MessageOccurrenceSpecification25"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="e4a8dd18-9e98-401a-98b3-edd9052b7bb9"
+            name="ExecutionOccurrenceSpecification13">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="a091feb1-174e-43d4-9605-46f9f8c4001d"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="GameEngineAsteroidModels.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="c4daed19-afdc-4d13-bf18-6adccf9a3b17"
+                LastKnownName="Bullet"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="10a96e40-ea4d-4530-ac4c-693856c43db4"
+            name="MessageOccurrenceSpecification24">
+            <covered>
+              <lifelineMoniker
+                Id="c4daed19-afdc-4d13-bf18-6adccf9a3b17"
+                LastKnownName="Bullet"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="8678daed-7d50-4a96-be37-22d41f1e208e"
+            name="MessageOccurrenceSpecification23">
+            <covered>
+              <lifelineMoniker
+                Id="79b25861-3ac1-4646-978e-602ac7d5d2b6"
+                LastKnownName="Weapon"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="abca9b6b-37a2-4df7-8b95-3b8284edc377"
+            name="MessageOccurrenceSpecification25">
+            <covered>
+              <lifelineMoniker
+                Id="c4daed19-afdc-4d13-bf18-6adccf9a3b17"
+                LastKnownName="Bullet"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="1e623210-2332-44b5-9ae9-aaf67b34256c"
+            name="MessageOccurrenceSpecification26">
+            <covered>
+              <lifelineMoniker
+                Id="79b25861-3ac1-4646-978e-602ac7d5d2b6"
+                LastKnownName="Weapon"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="544ac057-41e3-4cc7-9915-79b2bffb0180"
+            name="ExecutionOccurrenceSpecification14">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="a2172c7c-de52-4ce4-97d6-1b4b99cb3cfc"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="GameEngineAsteroidModels.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="c4daed19-afdc-4d13-bf18-6adccf9a3b17"
+                LastKnownName="Bullet"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="e9c2dc52-57ef-4de7-8b1c-d246e6a13c46"
+            name="MessageOccurrenceSpecification18">
+            <covered>
+              <lifelineMoniker
+                Id="fc199d06-aaae-4460-9232-c007548468b7"
+                LastKnownName="Player"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="c698a932-24f2-415a-bb39-a9680aea91f5"
+            name="MessageOccurrenceSpecification17">
+            <covered>
+              <lifelineMoniker
+                Id="79b25861-3ac1-4646-978e-602ac7d5d2b6"
+                LastKnownName="Weapon"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="ca3f72f6-6997-4d05-8084-8e915f23fcca"
+            name="ExecutionOccurrenceSpecification10">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="ca3bd2c9-9995-4891-86ea-ce9138482a18"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="GameEngineAsteroidModels.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="79b25861-3ac1-4646-978e-602ac7d5d2b6"
+                LastKnownName="Weapon"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="da59c171-8c11-497a-abd9-1a05b287d7d4"
+            name="MessageOccurrenceSpecification14">
+            <covered>
+              <lifelineMoniker
+                Id="c679bd7d-d058-4f28-90c9-1fa2dbb0fc5a"
+                LastKnownName="Game"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="89f639b1-ca5a-4665-a0de-fce7bc6dbf8d"
+            name="MessageOccurrenceSpecification13">
+            <covered>
+              <lifelineMoniker
+                Id="fc199d06-aaae-4460-9232-c007548468b7"
+                LastKnownName="Player"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="37d1e124-b4be-4209-9629-dce4a5bbd139"
+            name="ExecutionOccurrenceSpecification8">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="94f0a940-92f6-42df-b542-1e83d75cad83"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="GameEngineAsteroidModels.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="fc199d06-aaae-4460-9232-c007548468b7"
+                LastKnownName="Player"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="ff7defae-8339-4755-b12a-2ba2eb2a1398"
+            name="MessageOccurrenceSpecification5">
+            <covered>
+              <lifelineMoniker
+                Id="c679bd7d-d058-4f28-90c9-1fa2dbb0fc5a"
+                LastKnownName="Game"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="d6aa008e-bc1b-4dfe-b4dd-0e72382e6d86"
+            name="MessageOccurrenceSpecification6">
+            <covered>
+              <lifelineMoniker
+                Id="8b6c2786-1a15-4ffa-8eec-936fe42177de"
+                LastKnownName="Игрок"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="e992e75c-3a50-4836-b663-4ef1a8cfda25"
+            name="ExecutionOccurrenceSpecification4">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="76351be8-92bd-42d7-aca5-6bd442925666"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="GameEngineAsteroidModels.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="c679bd7d-d058-4f28-90c9-1fa2dbb0fc5a"
+                LastKnownName="Game"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="ef10ce33-3889-433f-89fc-40e3c5267ff2"
+            name="BehaviorExecutionSpecification8">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="46d036fe-96ce-4db5-8b4e-f3d34d479b0a"
+                LastKnownName="GameField"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="41cbf661-2210-4374-a25b-61e49eeba3a6"
+                LastKnownName="ExecutionOccurrenceSpecification16"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="b82e2a1f-bf7e-4eee-ae6c-867258e0af94"
+                LastKnownName="ExecutionOccurrenceSpecification15"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="0fe0faed-5f9d-4baa-bfdc-3270ad0b6822"
+                LastKnownName="MessageOccurrenceSpecification28"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="ddd55c13-8eee-4456-a35e-613e43c72e78"
+                LastKnownName="MessageOccurrenceSpecification29"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="722caa49-3abe-4100-aacf-a4129e19b45b"
+                LastKnownName="MessageOccurrenceSpecification37"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="b9fd7331-f640-4887-b46b-58fd6c6f284c"
+                LastKnownName="MessageOccurrenceSpecification40"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="b82e2a1f-bf7e-4eee-ae6c-867258e0af94"
+            name="ExecutionOccurrenceSpecification15">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="80943610-ffd4-4f4c-8e5a-b9c486188f25"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="GameEngineAsteroidModels.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="46d036fe-96ce-4db5-8b4e-f3d34d479b0a"
+                LastKnownName="GameField"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="0ebbc9fd-9edd-4830-8822-afb8be737f28"
+            name="MessageOccurrenceSpecification27">
+            <covered>
+              <lifelineMoniker
+                Id="c4daed19-afdc-4d13-bf18-6adccf9a3b17"
+                LastKnownName="Bullet"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="0fe0faed-5f9d-4baa-bfdc-3270ad0b6822"
+            name="MessageOccurrenceSpecification28">
+            <covered>
+              <lifelineMoniker
+                Id="46d036fe-96ce-4db5-8b4e-f3d34d479b0a"
+                LastKnownName="GameField"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="1f6f4ebc-abe0-45bd-93f7-6062bb60010f"
+            name="BehaviorExecutionSpecification9">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="c679bd7d-d058-4f28-90c9-1fa2dbb0fc5a"
+                LastKnownName="Game"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="cc691d1e-25ef-4c98-8a9e-e92ef8044ccd"
+                LastKnownName="ExecutionOccurrenceSpecification18"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="156f636b-beda-44dc-81f0-828f07e5252d"
+                LastKnownName="ExecutionOccurrenceSpecification17"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="089673b9-573a-459a-a4bc-12288d42ecd5"
+                LastKnownName="MessageOccurrenceSpecification30"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="156f636b-beda-44dc-81f0-828f07e5252d"
+            name="ExecutionOccurrenceSpecification17">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="52cc0224-697f-49e3-8d05-5dd855d9c1e3"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="GameEngineAsteroidModels.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="c679bd7d-d058-4f28-90c9-1fa2dbb0fc5a"
+                LastKnownName="Game"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="ddd55c13-8eee-4456-a35e-613e43c72e78"
+            name="MessageOccurrenceSpecification29">
+            <covered>
+              <lifelineMoniker
+                Id="46d036fe-96ce-4db5-8b4e-f3d34d479b0a"
+                LastKnownName="GameField"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="089673b9-573a-459a-a4bc-12288d42ecd5"
+            name="MessageOccurrenceSpecification30">
+            <covered>
+              <lifelineMoniker
+                Id="c679bd7d-d058-4f28-90c9-1fa2dbb0fc5a"
+                LastKnownName="Game"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="7406d42a-d4e8-4328-8d38-0341c7d45537"
+            name="BehaviorExecutionSpecification12">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="c4daed19-afdc-4d13-bf18-6adccf9a3b17"
+                LastKnownName="Bullet"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="6deaae3a-6bea-4112-9ff0-3f2921dadfc1"
+                LastKnownName="ExecutionOccurrenceSpecification24"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="c53bc91c-c2ac-4358-9dc0-a87f2e147b9c"
+                LastKnownName="ExecutionOccurrenceSpecification23"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="7e65d041-cf44-4750-a651-daaf707ba8ef"
+                LastKnownName="MessageOccurrenceSpecification38"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="abfa88f5-79ca-4eb7-be19-3768048ef3ad"
+                LastKnownName="MessageOccurrenceSpecification39"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="c53bc91c-c2ac-4358-9dc0-a87f2e147b9c"
+            name="ExecutionOccurrenceSpecification23">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="e5fee2e4-4204-4d60-bd3e-bdc626b62ce0"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="GameEngineAsteroidModels.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="c4daed19-afdc-4d13-bf18-6adccf9a3b17"
+                LastKnownName="Bullet"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="722caa49-3abe-4100-aacf-a4129e19b45b"
+            name="MessageOccurrenceSpecification37">
+            <covered>
+              <lifelineMoniker
+                Id="46d036fe-96ce-4db5-8b4e-f3d34d479b0a"
+                LastKnownName="GameField"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="7e65d041-cf44-4750-a651-daaf707ba8ef"
+            name="MessageOccurrenceSpecification38">
+            <covered>
+              <lifelineMoniker
+                Id="c4daed19-afdc-4d13-bf18-6adccf9a3b17"
+                LastKnownName="Bullet"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="cc691d1e-25ef-4c98-8a9e-e92ef8044ccd"
+            name="ExecutionOccurrenceSpecification18">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="6c0d7dc3-686d-467b-99f9-04b943802ef5"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="GameEngineAsteroidModels.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="c679bd7d-d058-4f28-90c9-1fa2dbb0fc5a"
+                LastKnownName="Game"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="b9fd7331-f640-4887-b46b-58fd6c6f284c"
+            name="MessageOccurrenceSpecification40">
+            <covered>
+              <lifelineMoniker
+                Id="46d036fe-96ce-4db5-8b4e-f3d34d479b0a"
+                LastKnownName="GameField"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="abfa88f5-79ca-4eb7-be19-3768048ef3ad"
+            name="MessageOccurrenceSpecification39">
+            <covered>
+              <lifelineMoniker
+                Id="c4daed19-afdc-4d13-bf18-6adccf9a3b17"
+                LastKnownName="Bullet"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="6deaae3a-6bea-4112-9ff0-3f2921dadfc1"
+            name="ExecutionOccurrenceSpecification24">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="d633eae5-a86d-4504-a08a-8979d56a6c32"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="GameEngineAsteroidModels.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="c4daed19-afdc-4d13-bf18-6adccf9a3b17"
+                LastKnownName="Bullet"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="41cbf661-2210-4374-a25b-61e49eeba3a6"
+            name="ExecutionOccurrenceSpecification16">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="71527448-fef6-4f10-8731-8054bd4bbd13"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="GameEngineAsteroidModels.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="46d036fe-96ce-4db5-8b4e-f3d34d479b0a"
+                LastKnownName="GameField"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="d89b7d5c-e60d-407c-ae4a-1bec7f991317"
+            name="BehaviorExecutionSpecification13">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="46d036fe-96ce-4db5-8b4e-f3d34d479b0a"
+                LastKnownName="GameField"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="4faf8413-ceb2-450a-a8f0-5ca671c2aed1"
+                LastKnownName="ExecutionOccurrenceSpecification26"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="5058c4ae-6ac0-4492-8a86-c4f53e000605"
+                LastKnownName="ExecutionOccurrenceSpecification25"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="fd811274-28f5-45b6-8425-9a3cab9f59f2"
+                LastKnownName="MessageOccurrenceSpecification42"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="28963eaa-d555-499d-befb-19ad0bfb7f6c"
+                LastKnownName="MessageOccurrenceSpecification44"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="5058c4ae-6ac0-4492-8a86-c4f53e000605"
+            name="ExecutionOccurrenceSpecification25">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="36d92057-8ccf-4ace-9c4f-f74c9b352102"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="GameEngineAsteroidModels.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="46d036fe-96ce-4db5-8b4e-f3d34d479b0a"
+                LastKnownName="GameField"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="c6a314b4-d9f7-40a0-98a8-fb02b64b291e"
+            name="MessageOccurrenceSpecification41">
+            <covered>
+              <lifelineMoniker
+                Id="c4daed19-afdc-4d13-bf18-6adccf9a3b17"
+                LastKnownName="Bullet"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="fd811274-28f5-45b6-8425-9a3cab9f59f2"
+            name="MessageOccurrenceSpecification42">
+            <covered>
+              <lifelineMoniker
+                Id="46d036fe-96ce-4db5-8b4e-f3d34d479b0a"
+                LastKnownName="GameField"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="14a94bf5-bd4a-44ec-94fe-4565b16d35a7"
+            name="BehaviorExecutionSpecification14">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="c679bd7d-d058-4f28-90c9-1fa2dbb0fc5a"
+                LastKnownName="Game"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="103bf903-97d6-4180-8fa4-451fe24b3da3"
+                LastKnownName="ExecutionOccurrenceSpecification28"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="aa7db457-8724-4422-a0fc-4da217efb562"
+                LastKnownName="ExecutionOccurrenceSpecification27"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="763e3dc7-9816-47f4-b9e4-b1fa9e45c657"
+                LastKnownName="MessageOccurrenceSpecification45"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="aa7db457-8724-4422-a0fc-4da217efb562"
+            name="ExecutionOccurrenceSpecification27">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="8ff3f4ac-4ca1-4335-b912-b6e4246484cb"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="GameEngineAsteroidModels.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="c679bd7d-d058-4f28-90c9-1fa2dbb0fc5a"
+                LastKnownName="Game"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="28963eaa-d555-499d-befb-19ad0bfb7f6c"
+            name="MessageOccurrenceSpecification44">
+            <covered>
+              <lifelineMoniker
+                Id="46d036fe-96ce-4db5-8b4e-f3d34d479b0a"
+                LastKnownName="GameField"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="763e3dc7-9816-47f4-b9e4-b1fa9e45c657"
+            name="MessageOccurrenceSpecification45">
+            <covered>
+              <lifelineMoniker
+                Id="c679bd7d-d058-4f28-90c9-1fa2dbb0fc5a"
+                LastKnownName="Game"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="4faf8413-ceb2-450a-a8f0-5ca671c2aed1"
+            name="ExecutionOccurrenceSpecification26">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="3cc43f0a-107d-4fb5-bf82-38d3173be336"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="GameEngineAsteroidModels.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="46d036fe-96ce-4db5-8b4e-f3d34d479b0a"
+                LastKnownName="GameField"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="103bf903-97d6-4180-8fa4-451fe24b3da3"
+            name="ExecutionOccurrenceSpecification28">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="ebfa211f-76ca-4768-aa00-ba311757a374"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="GameEngineAsteroidModels.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="c679bd7d-d058-4f28-90c9-1fa2dbb0fc5a"
+                LastKnownName="Game"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+        </fragments>
+        <lifelines>
+          <lifeline
+            Id="8b6c2786-1a15-4ffa-8eec-936fe42177de"
+            name="Игрок"
+            isActor="false"
+            lifelineDisplayName="Игрок">
+            <topLevelOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="7681e487-b2ba-4f83-888e-b26b98ff737c"
+                LastKnownName="MessageOccurrenceSpecification3"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="d6aa008e-bc1b-4dfe-b4dd-0e72382e6d86"
+                LastKnownName="MessageOccurrenceSpecification6"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="c679bd7d-d058-4f28-90c9-1fa2dbb0fc5a"
+            name="Game"
+            isActor="false"
+            lifelineDisplayName="Game">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="9b493c43-fb4a-4e16-8165-286105dfb086"
+                LastKnownName="ExecutionOccurrenceSpecification3"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="e992e75c-3a50-4836-b663-4ef1a8cfda25"
+                LastKnownName="ExecutionOccurrenceSpecification4"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="156f636b-beda-44dc-81f0-828f07e5252d"
+                LastKnownName="ExecutionOccurrenceSpecification17"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="cc691d1e-25ef-4c98-8a9e-e92ef8044ccd"
+                LastKnownName="ExecutionOccurrenceSpecification18"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="aa7db457-8724-4422-a0fc-4da217efb562"
+                LastKnownName="ExecutionOccurrenceSpecification27"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="103bf903-97d6-4180-8fa4-451fe24b3da3"
+                LastKnownName="ExecutionOccurrenceSpecification28"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="46d036fe-96ce-4db5-8b4e-f3d34d479b0a"
+            name="GameField"
+            isActor="false"
+            lifelineDisplayName="GameField">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="b82e2a1f-bf7e-4eee-ae6c-867258e0af94"
+                LastKnownName="ExecutionOccurrenceSpecification15"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="41cbf661-2210-4374-a25b-61e49eeba3a6"
+                LastKnownName="ExecutionOccurrenceSpecification16"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="5058c4ae-6ac0-4492-8a86-c4f53e000605"
+                LastKnownName="ExecutionOccurrenceSpecification25"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="4faf8413-ceb2-450a-a8f0-5ca671c2aed1"
+                LastKnownName="ExecutionOccurrenceSpecification26"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="fc199d06-aaae-4460-9232-c007548468b7"
+            name="Player"
+            isActor="false"
+            lifelineDisplayName="Player">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="a648fe66-fa3e-4d9a-bdf5-dce22aa3b620"
+                LastKnownName="ExecutionOccurrenceSpecification7"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="37d1e124-b4be-4209-9629-dce4a5bbd139"
+                LastKnownName="ExecutionOccurrenceSpecification8"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="79b25861-3ac1-4646-978e-602ac7d5d2b6"
+            name="Weapon"
+            isActor="false"
+            lifelineDisplayName="Weapon">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="95832c49-0294-4bac-b412-a17be0665f46"
+                LastKnownName="ExecutionOccurrenceSpecification9"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="ca3f72f6-6997-4d05-8084-8e915f23fcca"
+                LastKnownName="ExecutionOccurrenceSpecification10"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="c4daed19-afdc-4d13-bf18-6adccf9a3b17"
+            name="Bullet"
+            isActor="false"
+            lifelineDisplayName="Bullet">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="e4a8dd18-9e98-401a-98b3-edd9052b7bb9"
+                LastKnownName="ExecutionOccurrenceSpecification13"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="544ac057-41e3-4cc7-9915-79b2bffb0180"
+                LastKnownName="ExecutionOccurrenceSpecification14"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="0ebbc9fd-9edd-4830-8822-afb8be737f28"
+                LastKnownName="MessageOccurrenceSpecification27"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="c53bc91c-c2ac-4358-9dc0-a87f2e147b9c"
+                LastKnownName="ExecutionOccurrenceSpecification23"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="6deaae3a-6bea-4112-9ff0-3f2921dadfc1"
+                LastKnownName="ExecutionOccurrenceSpecification24"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="c6a314b4-d9f7-40a0-98a8-fb02b64b291e"
+                LastKnownName="MessageOccurrenceSpecification41"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+        </lifelines>
+        <messages>
+          <message
+            Id="cd21088c-f72e-4fde-92fb-1abf97e2d798"
+            name="Нажатие кнопки выстрела"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="7681e487-b2ba-4f83-888e-b26b98ff737c"
+                LastKnownName="MessageOccurrenceSpecification3"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="9d6b36b0-d741-4b76-b311-015da31e32de"
+                LastKnownName="MessageOccurrenceSpecification4"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="73e074b6-4334-4903-baae-9b30598f156c"
+            name="Выстрел"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="405fb9b2-c4a4-411d-8856-c4df53fcb0e3"
+                LastKnownName="MessageOccurrenceSpecification11"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="27b69084-d170-4fb1-ba66-e529603ad7df"
+                LastKnownName="MessageOccurrenceSpecification12"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="79cd0313-0311-412f-9bfa-77c0ca04649e"
+            name="Выстрел"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="6feff258-00bd-4e1f-af2b-2b49ae5ff6b1"
+                LastKnownName="MessageOccurrenceSpecification15"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="47ecbbc2-dcb7-43bc-ba87-70d90d0f544a"
+                LastKnownName="MessageOccurrenceSpecification16"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="6118cfb3-1362-429a-a385-f408f11ff278"
+            name="Создать снаряд"
+            messageKind="Complete"
+            messageSort="CreateMessage"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="8678daed-7d50-4a96-be37-22d41f1e208e"
+                LastKnownName="MessageOccurrenceSpecification23"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="10a96e40-ea4d-4530-ac4c-693856c43db4"
+                LastKnownName="MessageOccurrenceSpecification24"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="402c774a-f7a5-4906-9800-81f42eea3109"
+            name="&lt;&lt;return&gt;&gt;"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="abca9b6b-37a2-4df7-8b95-3b8284edc377"
+                LastKnownName="MessageOccurrenceSpecification25"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="1e623210-2332-44b5-9ae9-aaf67b34256c"
+                LastKnownName="MessageOccurrenceSpecification26"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="e2461a90-041c-4d1d-be0f-30e488d79993"
+            name="&lt;&lt;return&gt;&gt;"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="c698a932-24f2-415a-bb39-a9680aea91f5"
+                LastKnownName="MessageOccurrenceSpecification17"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="e9c2dc52-57ef-4de7-8b1c-d246e6a13c46"
+                LastKnownName="MessageOccurrenceSpecification18"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="689d0d61-5629-43a5-be5f-82889536322b"
+            name="&lt;&lt;return&gt;&gt;"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="89f639b1-ca5a-4665-a0de-fce7bc6dbf8d"
+                LastKnownName="MessageOccurrenceSpecification13"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="da59c171-8c11-497a-abd9-1a05b287d7d4"
+                LastKnownName="MessageOccurrenceSpecification14"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="c9aabbec-98d3-42fc-8227-d6c5d89fee43"
+            name="&lt;&lt;return&gt;&gt;"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="ff7defae-8339-4755-b12a-2ba2eb2a1398"
+                LastKnownName="MessageOccurrenceSpecification5"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="d6aa008e-bc1b-4dfe-b4dd-0e72382e6d86"
+                LastKnownName="MessageOccurrenceSpecification6"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="6483fa18-56ac-4d84-a7d9-4ade1a3a252a"
+            name="Движение"
+            messageKind="Complete"
+            messageSort="AsynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="0ebbc9fd-9edd-4830-8822-afb8be737f28"
+                LastKnownName="MessageOccurrenceSpecification27"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="0fe0faed-5f9d-4baa-bfdc-3270ad0b6822"
+                LastKnownName="MessageOccurrenceSpecification28"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="a95c03d4-6ac8-4d7d-91b2-6d8fb23707a0"
+            name="Движение"
+            messageKind="Complete"
+            messageSort="AsynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="ddd55c13-8eee-4456-a35e-613e43c72e78"
+                LastKnownName="MessageOccurrenceSpecification29"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="089673b9-573a-459a-a4bc-12288d42ecd5"
+                LastKnownName="MessageOccurrenceSpecification30"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="6cba632f-5528-433c-a6fe-4172e0ef532f"
+            name="Проверка на столкновения"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="722caa49-3abe-4100-aacf-a4129e19b45b"
+                LastKnownName="MessageOccurrenceSpecification37"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="7e65d041-cf44-4750-a651-daaf707ba8ef"
+                LastKnownName="MessageOccurrenceSpecification38"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="1f63065a-1fc1-41a4-9e46-3c6e69a10cff"
+            name="&lt;&lt;return&gt;&gt;"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="abfa88f5-79ca-4eb7-be19-3768048ef3ad"
+                LastKnownName="MessageOccurrenceSpecification39"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="b9fd7331-f640-4887-b46b-58fd6c6f284c"
+                LastKnownName="MessageOccurrenceSpecification40"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="53966572-0f68-4ffc-84a1-8addafbf7c47"
+            name="Самоуничтожение"
+            messageKind="Complete"
+            messageSort="AsynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="c6a314b4-d9f7-40a0-98a8-fb02b64b291e"
+                LastKnownName="MessageOccurrenceSpecification41"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="fd811274-28f5-45b6-8425-9a3cab9f59f2"
+                LastKnownName="MessageOccurrenceSpecification42"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="dec822f3-0d3f-4162-bc5e-c9115b8404a7"
+            name="Самоуничтожение"
+            messageKind="Complete"
+            messageSort="AsynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="28963eaa-d555-499d-befb-19ad0bfb7f6c"
+                LastKnownName="MessageOccurrenceSpecification44"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="763e3dc7-9816-47f4-b9e4-b1fa9e45c657"
+                LastKnownName="MessageOccurrenceSpecification45"
+                LastKnownLocation="GameEngineAsteroidModels.uml" />
+            </receiveEvent>
+          </message>
+        </messages>
+      </interaction>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="75b3e461-0e37-468c-8522-3b7b97132e2d"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="76351be8-92bd-42d7-aca5-6bd442925666"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="1c91cf98-b4b9-4bfa-8961-0b99bc103896"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="94f0a940-92f6-42df-b542-1e83d75cad83"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="744ea5f0-c776-4d35-b592-ee5b80514494"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="ca3bd2c9-9995-4891-86ea-ce9138482a18"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="a091feb1-174e-43d4-9605-46f9f8c4001d"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="a2172c7c-de52-4ce4-97d6-1b4b99cb3cfc"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="80943610-ffd4-4f4c-8e5a-b9c486188f25"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="71527448-fef6-4f10-8731-8054bd4bbd13"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="52cc0224-697f-49e3-8d05-5dd855d9c1e3"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="6c0d7dc3-686d-467b-99f9-04b943802ef5"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="e5fee2e4-4204-4d60-bd3e-bdc626b62ce0"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="d633eae5-a86d-4504-a08a-8979d56a6c32"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="36d92057-8ccf-4ace-9c4f-f74c9b352102"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="3cc43f0a-107d-4fb5-bf82-38d3173be336"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="8ff3f4ac-4ca1-4335-b912-b6e4246484cb"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="ebfa211f-76ca-4768-aa00-ba311757a374"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>
